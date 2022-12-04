@@ -13,6 +13,42 @@
           <a href=""><img src="../assets/cart.svg" alt="Cart" /></a>
         </div>
       </div>
+      <div class="contacts">
+        <h2>contacts 連絡先</h2>
+        <div class="contacts__block">
+          <div class="contacts__block__information">
+            <div class="contacts__block__information__address">
+              <h4>Our address</h4>
+              <h5>45454 Kelsie Village Apt. 099</h5>
+            </div>
+            <div class="contacts__block__information__hours">
+              <h4>Working hours</h4>
+              <h5>9 am - 11 pm</h5>
+            </div>
+            <div class="contacts__block__information__phone">
+              <h4>Our phone</h4>
+              <h5>952.599.8789 x9305</h5>
+            </div>
+            <div class="contacts__block__information__social">
+              <h4>Social networks</h4>
+              <div class="social">
+                <a href="#"
+                  ><img src="../assets/Instagram.svg" alt="Instagram"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/Facebook.svg" alt="Facebook"
+                /></a>
+                <a href="#"
+                  ><img src="../assets/Twitter.svg" alt="Twitter"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__block__map">
+            <img src="../assets/map.png" alt="Map" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -53,113 +89,68 @@ export default {
   color: #bf3c30;
 }
 
-.main-block {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-block__text {
-  width: 500px;
-  height: 548px;
-  margin: 100px 0 0;
-}
-
-.main-block__text h1 {
-  font-size: 58px;
-  color: #bf3c30;
-  font-weight: 900;
-  margin: 0;
-}
-
-.main-block__text img {
-  margin: 35px 0;
-}
-
-.main-block__text h2 {
-  font-size: 38px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.main-block__text h4 {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 20px 0;
-}
-
-h2 span {
-  color: #bf3c30;
-}
-
-.main-block__button {
-  position: relative;
-  margin: 0 0 0 10px;
-  width: 240px;
-  height: 70px;
-  background-color: #bf3c30;
-  color: #e3dcc3;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 7px;
-}
-
-.button__outline {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #262524;
-  border-radius: 7px;
-  top: 7px;
-  left: -10px;
-  z-index: -1;
-}
-
-.button__text {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 35%;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.main-block__image img {
-  margin: 65px 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  margin: 70px 0 0 0;
-}
-
-.footer__buttons {
-  display: flex;
-  gap: 46px;
-  align-items: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.footer__buttons a {
-  text-decoration: none;
-  color: #262524;
-  transition: 0.2s all;
-}
-
-.footer__buttons :hover {
-  color: #bf3c30;
-}
-
-.footer__line {
+.contacts h2 {
   display: flex;
   justify-content: center;
+  margin: 30px 0;
+  height: 60px;
+  color: #262524;
+  font-size: 37px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
+
+.contacts__block {
+  display: flex;
+  justify-content: center;
+  gap: 218px;
+}
+
+.contacts__block__information h4 {
+  color: #262524;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contacts__block__information h5 {
+  color: #262524;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contacts__block__information__address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 0 40px;
+}
+
+.contacts__block__information__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 0 40px;
+}
+
+.contacts__block__information__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 0 40px;
+}
+
+.contacts__block__information__social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  gap: 33px;
+}
+
 </style>
