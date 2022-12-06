@@ -5,17 +5,19 @@
     <router-link to="/our-story">Our Story</router-link> |
     <router-link to="/contacts">Contacts</router-link> |
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
 body {
-  background-color: #e3dcc3;
+  background-color: #f1e2d2;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   color: #262524;
   margin: 0;
   padding: 0;
   height: 100%;
+  /* background-image: url("./assets/background.png"); */
+  background-position: top;
 }
 </style>

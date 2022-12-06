@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
+  <div
+    class="about"
+    :style="{'background-image': 'url(' + require('../assets/background.png') + ')'}">
     <div class="container">
       <div class="navbar">
         <div class="navbar__logo">
@@ -152,5 +154,4 @@ export default {
   display: flex;
   gap: 33px;
 }
-
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
+  <div
+    class="about"
+    :style="{'background-image': 'url(' + require('../assets/background-story.png') + ')'}">
     <div class="container">
       <div class="navbar">
         <div class="navbar__logo">
@@ -13,6 +15,7 @@
           <a href=""><img src="../assets/cart.svg" alt="Cart" /></a>
         </div>
       </div>
+      <div class="some-space"></div>
     </div>
   </div>
 </template>
@@ -22,6 +25,7 @@ export default {
 };
 </script>
 <style>
+
 .container {
   width: 1140px;
   margin: 30px auto 0;
@@ -51,6 +55,10 @@ export default {
 
 .navbar__buttons :hover {
   color: #bf3c30;
+}
+
+.some-space {
+  padding: 0 0 1000px;
 }
 
 .main-block {

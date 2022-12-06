@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
+  <div
+    class="about"
+    :style="{'background-image': 'url(' + require('../assets/background.png') + ')'}">
     <div class="container">
       <div class="navbar">
         <div class="navbar__logo">
@@ -41,7 +43,7 @@
           <div class="menu__list__item">
             <div class="menu__list__item__card">
               <h3>Tonkotsu ramen</h3>
-              <img src="../assets/ramen-menu.svg" alt="Ramen" />
+              <img src="../assets/soup-menu.svg" alt="Soup" />
               <p>
                 Originating from modern-day Fukuoka and lending its mouthwatering fragrance to Tokyo’s Asakusa region, tonkotsu ramen is made from boiling pork.
               </p>
@@ -56,7 +58,7 @@
           <div class="menu__list__item">
             <div class="menu__list__item__card">
               <h3>Shoyu Ramen</h3>
-              <img src="../assets/ramen-menu.svg" alt="Ramen" />
+              <img src="../assets/rice-menu.svg" alt="Rice" />
               <p>
                 Shoyu means soy sauce in Japanese and this style of noodle dish was actually the first type of ramen and is still going strong.
               </p>
@@ -73,7 +75,7 @@
           <div class="menu__list__item">
             <div class="menu__list__item__card">
               <h3>shio ramen</h3>
-              <img src="../assets/ramen-menu.svg" alt="Ramen" />
+              <img src="../assets/salad-menu.svg" alt="Salad" />
               <p>
                 Shio means salt and this style of ramen tends to be light and transparent. It’s often made by boiling down chicken bones and flavored with seafood.
               </p>

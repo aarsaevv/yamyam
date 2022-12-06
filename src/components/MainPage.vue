@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div
+    class="home" :style="{'background-image': 'url(' + require('../assets/background.png') + ')'}">
     <div class="container">
       <div class="navbar">
         <div class="navbar__logo">
@@ -13,33 +14,28 @@
           <a href=""><img src="../assets/cart.svg" alt="Cart" /></a>
         </div>
       </div>
-      <div class="main-block">
-        <div class="main-block__text">
-          <h1>ラーメン</h1>
-          <img src="../assets/curved-line.svg" alt="Noodles" />
-          <h2>a bowl of love from <span>japanese cuisine</span> for you</h2>
-          <h4>
-            Ramen is a traditional Japanese noodle soup. It consists of Chinese
-            wheat noodles served in a meat or fish-based broth & uses toppings
-            such as sliced pork, nori, menma, and scallions.
-          </h4>
-          <div class="main-block__button">
-            <div class="button__text">Order Now</div>
-            <div class="button__outline"></div>
-          </div>
+      <div class="main">
+        <div class="main__block">
+          <div class="main__block__text">
+          <h1>Hello! こんにちは！</h1>
+          <h2><span>Y</span>ummy</h2>
+          <h2><span>A</span>romatic</h2>
+          <h2><span>M</span>outh-watering</h2>
         </div>
-        <div class="main-block__image">
-          <img src="../assets/ramen.svg" alt="Ramen" />
+        <div class="main__block__button">
+          <div class="button__text">Ramen</div>
+          <div class="button__outline"></div>
+        </div>
+        </div>
+        <div class="main__image">
+          <img src="../assets/ramen-cat-with-noodle.png" alt="Ramen" />
         </div>
       </div>
       <div class="footer">
         <div class="footer__buttons">
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-        </div>
-        <div class="footer__line">
-          <img src="../assets/line-black.svg" alt="Line" />
+          <a href="#"><img src="../assets/instagram-red.svg" alt="Instagram"></a>
+          <a href="#"><img src="../assets/facebook-red.svg" alt="Facebook"></a>
+          <a href="#"><img src="../assets/twitter-red.svg" alt="Twitter"></a>
         </div>
       </div>
     </div>
@@ -53,7 +49,7 @@ export default {
 <style>
 .container {
   width: 1140px;
-  margin: 30px auto 0;
+
 }
 
 .navbar {
@@ -82,52 +78,42 @@ export default {
   color: #bf3c30;
 }
 
-.main-block {
+.main {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-.main-block__text {
+.main__block__text {
   width: 500px;
-  height: 548px;
-  margin: 100px 0 0;
+  margin: 0 0 35px;
 }
 
-.main-block__text h1 {
-  font-size: 58px;
-  color: #bf3c30;
+.main__block__text h1 {
+  font-size: 50px;
   font-weight: 900;
-  margin: 0;
+  text-transform: uppercase;
+  margin: 0 0 70px;
 }
 
-.main-block__text img {
-  margin: 35px 0;
-}
-
-.main-block__text h2 {
+.main__block__text h2 {
   font-size: 38px;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
 }
 
-.main-block__text h4 {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 20px 0;
-}
-
 h2 span {
   color: #bf3c30;
 }
 
-.main-block__button {
+.main__block__button {
   position: relative;
   margin: 0 0 0 10px;
   width: 240px;
   height: 70px;
   background-color: #bf3c30;
-  color: #e3dcc3;
+  color: #F1E2D2;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -151,44 +137,27 @@ h2 span {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 35%;
+  top: 25%;
   left: 0;
   right: 0;
   text-align: center;
+  font-size: 23px;
 }
 
-.main-block__image img {
-  margin: 65px 0;
+.main__image {
+  width: 750px;
+  height: 750px;
 }
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  margin: 70px 0 0 0;
+  justify-content: center;
 }
 
 .footer__buttons {
   display: flex;
-  gap: 46px;
+  gap: 33px;
   align-items: center;
-  font-size: 18px;
-  letter-spacing: 1px;
 }
 
-.footer__buttons a {
-  text-decoration: none;
-  color: #262524;
-  transition: 0.2s all;
-}
-
-.footer__buttons :hover {
-  color: #bf3c30;
-}
-
-.footer__line {
-  display: flex;
-  justify-content: center;
-}
 </style>
