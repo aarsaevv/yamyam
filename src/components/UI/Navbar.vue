@@ -12,6 +12,7 @@
 			<router-link to="/menu">Menu</router-link>
 			<router-link to="/our-story">Our Story</router-link>
 			<router-link to="/contacts">Contacts</router-link>
+      <router-link to="/cart"><img src="../../assets/cart.svg" alt="Cart" /></router-link>
 		</div>
 	</div>
 </template>
