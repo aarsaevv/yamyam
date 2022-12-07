@@ -4,6 +4,7 @@
     <router-link to="/menu">Menu</router-link> |
     <router-link to="/our-story">Our Story</router-link> |
     <router-link to="/contacts">Contacts</router-link> |
+    <router-link to="/cart">Cart</router-link> |
   </nav>
   <router-view />
 </template>
@@ -17,7 +18,5 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* background-image: url("./assets/background.png"); */
-  background-position: top;
 }
 </style>

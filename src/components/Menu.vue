@@ -1,20 +1,8 @@
 <template>
   <div
-    class="about"
-    :style="{'background-image': 'url(' + require('../assets/background.png') + ')'}">
+    class="our-menu">
     <div class="container">
-      <div class="navbar">
-        <div class="navbar__logo">
-          <a href=""><img src="../assets/logo.svg" alt="YAMYAM" /></a>
-        </div>
-        <div class="navbar__buttons">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">Our Story</a>
-          <a href="#">Contacts</a>
-          <a href=""><img src="../assets/cart.svg" alt="Cart" /></a>
-        </div>
-      </div>
+      <Navbar />
       <div class="menu">
         <div class="menu__navigation">
           <a href="#">ramen 拉麺</a>
@@ -123,41 +111,25 @@
   </div>
 </template>
 <script>
+import Navbar from './UI/Navbar.vue';
+
 export default {
-  name: "Menu",
+    name: "Menu",
+    components: { Navbar }
 };
 </script>
 <style>
+
+.our-menu {
+  background-image: url('../assets/background.png');
+}
+
 .container {
   width: 1140px;
   margin: 30px auto 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
 
-.navbar a {
-  text-decoration: none;
-  color: #262524;
-}
-
-.navbar__buttons {
-  display: flex;
-  gap: 56px;
-  align-items: center;
-}
-
-.navbar__buttons a {
-  transition: 0.2s all;
-}
-
-.navbar__buttons :hover {
-  color: #bf3c30;
-}
 
 .menu__navigation {
   display: flex;

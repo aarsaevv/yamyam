@@ -1,173 +1,115 @@
 <template>
-  <div
-    class="about"
-    :style="{'background-image': 'url(' + require('../assets/background-story.png') + ')'}">
+  <div class="story">
     <div class="container">
-      <div class="navbar">
-        <div class="navbar__logo">
-          <a href=""><img src="../assets/logo.svg" alt="YAMYAM" /></a>
+      <Navbar />
+      <div class="our-story">
+        <div class="our-story__about-us">
+          <h2>About Us 私たちに関しては</h2>
+          <h6>
+            Ramen is Chinese in origin.<br />
+            The name was originally used for two other dishes, namely Chūka soba
+            and Shina soba. Both translate to “Chinese noodle”, but with
+            different connotations. Japan only co-opted the term in the late
+            19th century, when the country was going through an industrial
+            revolution. Since workers (also known as “salarymen” back then)
+            barely had the time to prepare their own meals before leaving for
+            work, they instead ate in ramen restaurants.
+          </h6>
         </div>
-        <div class="navbar__buttons">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">Our Story</a>
-          <a href="#">Contacts</a>
-          <a href=""><img src="../assets/cart.svg" alt="Cart" /></a>
+        <div class="our-story__our-team">
+          <h2>Our team 私たちのチーム</h2>
+          <h6>
+            Ramen is Chinese in origin.<br />
+            The name was originally used for two other dishes, namely Chūka soba
+            and Shina soba. Both translate to “Chinese noodle”, but with
+            different connotations. Japan only co-opted the term in the late
+            19th century, when the country was going through an industrial
+            revolution. Since workers (also known as “salarymen” back then)
+            barely had the time to prepare their own meals before leaving for
+            work, they instead ate in ramen restaurants.
+          </h6>
+        </div>
+        <div class="our-story__our-values">
+          <h2>Our values 私達の価値</h2>
+          <h6>
+            Ramen is Chinese in origin.<br />
+            The name was originally used for two other dishes, namely Chūka soba
+            and Shina soba. Both translate to “Chinese noodle”, but with
+            different connotations. Japan only co-opted the term in the late
+            19th century, when the country was going through an industrial
+            revolution. Since workers (also known as “salarymen” back then)
+            barely had the time to prepare their own meals before leaving for
+            work, they instead ate in ramen restaurants.
+          </h6>
         </div>
       </div>
-      <div class="some-space"></div>
     </div>
   </div>
 </template>
 <script>
+import Navbar from './UI/Navbar.vue';
+
 export default {
-  name: "OurStory",
+    name: "OurStory",
+    components: { Navbar }
 };
 </script>
-<style>
+<style scoped>
+.story {
+  background-image: url("../assets/background-story.png");
+}
 
 .container {
   width: 1140px;
-  margin: 30px auto 0;
+  height: 100vh;
 }
 
-.navbar {
+.our-story {
   display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  letter-spacing: 1px;
+  flex-direction: column;
+  gap: 50px;
+  margin: 44px 0 0;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #262524;
-}
-
-.navbar__buttons {
-  display: flex;
-  gap: 56px;
-  align-items: center;
-}
-
-.navbar__buttons a {
-  transition: 0.2s all;
-}
-
-.navbar__buttons :hover {
-  color: #bf3c30;
-}
-
-.some-space {
-  padding: 0 0 1000px;
-}
-
-.main-block {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-block__text {
-  width: 500px;
-  height: 548px;
-  margin: 100px 0 0;
-}
-
-.main-block__text h1 {
-  font-size: 58px;
-  color: #bf3c30;
-  font-weight: 900;
-  margin: 0;
-}
-
-.main-block__text img {
-  margin: 35px 0;
-}
-
-.main-block__text h2 {
+.our-story h2 {
   font-size: 38px;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
 }
 
-.main-block__text h4 {
-  font-size: 20px;
+.our-story h6 {
+  font-size: 18px;
   font-weight: 400;
-  margin: 20px 0;
+  margin: 0;
 }
 
-h2 span {
-  color: #bf3c30;
+.our-story__about-us {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 760px;
+  height: 222px;
+  text-align: justify;
 }
 
-.main-block__button {
-  position: relative;
-  margin: 0 0 0 10px;
-  width: 240px;
-  height: 70px;
-  background-color: #bf3c30;
-  color: #e3dcc3;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 7px;
-}
-
-.button__outline {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #262524;
-  border-radius: 7px;
-  top: 7px;
-  left: -10px;
-  z-index: -1;
-}
-
-.button__text {
-  position: absolute;
+.our-story__our-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-left: auto;
-  margin-right: auto;
-  top: 35%;
-  left: 0;
-  right: 0;
-  text-align: center;
+  gap: 15px;
+  width: 760px;
+  height: 222px;
+  text-align: right;
 }
 
-.main-block__image img {
-  margin: 65px 0;
-}
-
-.footer {
+.our-story__our-values {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  margin: 70px 0 0 0;
-}
-
-.footer__buttons {
-  display: flex;
-  gap: 46px;
-  align-items: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.footer__buttons a {
-  text-decoration: none;
-  color: #262524;
-  transition: 0.2s all;
-}
-
-.footer__buttons :hover {
-  color: #bf3c30;
-}
-
-.footer__line {
-  display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 760px;
+  height: 222px;
+  text-align: justify;
 }
 </style>

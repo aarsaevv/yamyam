@@ -1,19 +1,8 @@
 <template>
   <div
-    class="home" :style="{'background-image': 'url(' + require('../assets/background.png') + ')'}">
+    class="main-page">
     <div class="container">
-      <div class="navbar">
-        <div class="navbar__logo">
-          <a href=""><img src="../assets/logo.svg" alt="YAMYAM" /></a>
-        </div>
-        <div class="navbar__buttons">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">Our Story</a>
-          <a href="#">Contacts</a>
-          <a href=""><img src="../assets/cart.svg" alt="Cart" /></a>
-        </div>
-      </div>
+      <Navbar />
       <div class="main">
         <div class="main__block">
           <div class="main__block__text">
@@ -42,40 +31,22 @@
   </div>
 </template>
 <script>
+import Navbar from './UI/Navbar.vue';
+
 export default {
-  name: "MainPage",
+    name: "MainPage",
+    components: { Navbar }
 };
 </script>
 <style>
+
+.main-page {
+  background-image: url('../assets/background.png');
+}
+
 .container {
   width: 1140px;
-
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #262524;
-}
-
-.navbar__buttons {
-  display: flex;
-  gap: 56px;
-  align-items: center;
-}
-
-.navbar__buttons a {
-  transition: 0.2s all;
-}
-
-.navbar__buttons :hover {
-  color: #bf3c30;
+  height: 100vh;
 }
 
 .main {
