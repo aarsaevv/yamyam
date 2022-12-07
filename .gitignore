@@ -21,3 +21,11 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.firebase/hosting.ZGlzdA.cache
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
+package-lock.json
+package.json
+storage.rules
