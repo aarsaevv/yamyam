@@ -7,12 +7,12 @@
 					alt="YAMYAM"
 			/></a>
 		</div>
-		<div class="navbar__buttons">
+		<div class="navbar__links">
 			<router-link to="/">Home</router-link>
 			<router-link to="/menu">Menu</router-link>
 			<router-link to="/our-story">Our Story</router-link>
 			<router-link to="/contacts">Contacts</router-link>
-      <router-link to="/cart"><img src="../../assets/cart.svg" alt="Cart" /></router-link>
+      		<router-link to="/cart"><img src="../../assets/cart.svg" alt="Cart"></router-link>
 		</div>
 	</div>
 </template>
@@ -23,7 +23,7 @@
 	};
 </script>
 
-<style scoped>
+<style>
 	.navbar {
 		display: flex;
 		justify-content: space-between;
@@ -36,17 +36,17 @@
 		color: #262524;
 	}
 
-	.navbar__buttons {
+	.navbar__links {
 		display: flex;
 		gap: 56px;
 		align-items: center;
 	}
 
-	.navbar__buttons a {
+	.navbar__links a {
 		transition: 0.2s all;
 	}
 
-	.navbar__buttons :hover {
+	.navbar__links:hover {
 		color: #bf3c30;
 	}
 </style>
