@@ -24,7 +24,7 @@
 
 <style scoped>
 	.menu__list__item {
-		margin: 25px 80px 0 0;
+		margin: 25px 40px 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
