@@ -8,11 +8,33 @@
 			/></a>
 		</div>
 		<div class="navbar__links">
-			<router-link to="/">Home</router-link>
-			<router-link to="/menu">Menu</router-link>
-			<router-link to="/our-story">Our Story</router-link>
-			<router-link to="/contacts">Contacts</router-link>
-      		<router-link to="/cart"><img src="../../assets/cart.svg" alt="Cart"></router-link>
+			<router-link
+				class="navbar__link"
+				to="/"
+				>Home</router-link
+			>
+			<router-link
+				class="navbar__link"
+				to="/menu"
+				>Menu</router-link
+			>
+			<router-link
+				class="navbar__link"
+				to="/our-story"
+				>Our Story</router-link
+			>
+			<router-link
+				class="navbar__link"
+				to="/contacts"
+				>Contacts</router-link
+			>
+			<router-link
+				class="navbar__link"
+				to="/cart"
+				><img
+					src="../../assets/cart.svg"
+					alt="Cart"
+			/></router-link>
 		</div>
 	</div>
 </template>
@@ -46,7 +68,7 @@
 		transition: 0.2s all;
 	}
 
-	.navbar__links:hover {
+	.navbar__link:hover {
 		color: #bf3c30;
 	}
 </style>

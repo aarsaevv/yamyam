@@ -1,6 +1,6 @@
 <template>
-  <div class="cart">
-    <div class="container">
+  <div class="container">
+    <div class="cart">
       <Navbar />
     </div>
   </div>
