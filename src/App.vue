@@ -10,12 +10,14 @@
 		color: #262524;
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 	}
 
 	.container {
 		padding: 30px 0 0;
 		height: 100%;
 		width: 100vw;
+		background-repeat: no-repeat;
 	}
 </style>
 
