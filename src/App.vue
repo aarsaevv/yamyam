@@ -14,7 +14,7 @@
 
 	.container {
 		padding: 30px 0 0;
-		height: 100vh;
+		height: 100%;
 		background-size: cover;
 		box-sizing: border-box;
 	}
