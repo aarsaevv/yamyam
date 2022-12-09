@@ -8,9 +8,14 @@
 		font-family: "Noto Sans", sans-serif;
 		font-weight: 400;
 		color: #262524;
-		width: 1140px;
 		margin: 0;
 		padding: 0;
+	}
+
+	.container {
+		padding: 30px 0 0;
+		height: 100vh;
+		background-size: cover;
 	}
 </style>
 

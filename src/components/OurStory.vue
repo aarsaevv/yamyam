@@ -59,11 +59,12 @@
 		background-image: url("../assets/background-story.png");
 	}
 
-	.story {
+	.our-story {
 		display: flex;
 		flex-direction: column;
 		gap: 50px;
-		margin: 44px 0 0;
+		width: 1140px;
+		margin: 0 auto;
 	}
 
 	.story h2 {

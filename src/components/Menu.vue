@@ -125,9 +125,14 @@
 		components: { Navbar },
 	};
 </script>
-<style>
+<style scoped>
 	.container {
 		background-image: url("../assets/background.png");
+	}
+
+	.our-menu {
+		width: 1140px;
+		margin: 0 auto;
 	}
 
 	.menu__navigation {

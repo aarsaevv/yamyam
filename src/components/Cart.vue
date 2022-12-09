@@ -15,4 +15,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .cart {
+    width: 1140px;
+    margin: 0 auto;
+  }
+</style>

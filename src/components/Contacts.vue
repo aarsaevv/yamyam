@@ -57,9 +57,14 @@
 		components: { Navbar },
 	};
 </script>
-<style scoped>
+<style>
 	.container {
 		background-image: url("../assets/background-contacts.png");
+	}
+
+	.our-contacts {
+		width: 1140px;
+		margin: 0 auto;
 	}
 
 	.contacts h2 {

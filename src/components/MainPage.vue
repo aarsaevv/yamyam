@@ -54,8 +54,11 @@
 <style scoped>
 	.container {
 		background-image: url("../assets/background.png");
-		display: flex;
-		flex-direction: column;
+	}
+
+	.main-page {
+		width: 1140px;
+		margin: 0 auto;
 	}
 
 	.main {
@@ -70,7 +73,7 @@
 	}
 
 	.main__block__text h1 {
-		font-size: 50px;
+		font-size: 48px;
 		font-weight: 900;
 		text-transform: uppercase;
 		margin: 0 0 70px;
