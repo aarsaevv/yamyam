@@ -1,16 +1,16 @@
 <template>
 	<div class="container">
-		<div class="main-page">
+		<div class="main-page page">
 			<Navbar />
-			<div class="main">
-				<div class="main__block">
-					<div class="main__block__text">
+			<div class="page__content main">
+				<div class="main__block block">
+					<div class="block__text">
 						<h1>Hello! こんにちは！</h1>
 						<h2><span>Y</span>ummy</h2>
 						<h2><span>A</span>romatic</h2>
 						<h2><span>M</span>outh-watering</h2>
 					</div>
-					<button class="main__block__button">
+					<button class="block__button button">
 						<div class="button__text">Ramen</div>
 						<div class="button__outline"></div>
 					</button>
@@ -21,7 +21,7 @@
 						alt="Ramen" />
 				</div>
 			</div>
-			<div class="footer">
+			<div class="page__footer footer">
 				<div class="footer__buttons">
 					<a href="#"
 						><img
@@ -61,25 +61,25 @@
 		margin: 0 auto;
 	}
 
-	.main {
+	.page__content {
 		display: flex;
 		align-items: center;
 		gap: 20px;
 	}
 
-	.main__block__text {
+	.block__text {
 		width: 500px;
 		margin: 0 0 35px;
 	}
 
-	.main__block__text h1 {
+	.block__text h1 {
 		font-size: 48px;
 		font-weight: 900;
 		text-transform: uppercase;
 		margin: 0 0 70px;
 	}
 
-	.main__block__text h2 {
+	.block__text h2 {
 		font-size: 38px;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -90,7 +90,7 @@
 		color: #bf3c30;
 	}
 
-	.main__block__button {
+	.block__button {
 		position: relative;
 		margin: 0 0 0 10px;
 		width: 240px;
@@ -132,7 +132,7 @@
 		height: 750px;
 	}
 
-	.footer {
+	.page__footer {
 		display: flex;
 		justify-content: center;
 	}

@@ -9,7 +9,7 @@
 					<a href="#">rice ご飯</a>
 					<a href="#">salad サラダ</a>
 				</div>
-				<div class="menu__list">
+				<div class="menu__list list">
 					<MenuListItem />
 					<MenuListItem />
 					<MenuListItem />

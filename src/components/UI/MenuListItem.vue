@@ -1,6 +1,6 @@
 <template>
-		<div class="menu__list__item">
-			<div class="menu__list__item__card">
+		<div class="list__item item">
+			<div class="item__card card">
 				<h3>Miso ramen</h3>
 				<img
 					src="../../assets/ramen-menu.svg"
@@ -10,9 +10,9 @@
 					from its main ingredient. This broth is strong and savory and has an
 					opaque appearance.
 				</p>
-				<div class="card-price">
+				<div class="card__price cart">
 					<h5>12$ / 500gr</h5>
-					<button class="card-button">Add to cart</button>
+					<button class="cart__button">Add to cart</button>
 				</div>
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 </script>
 
 <style scoped>
-	.menu__list__item {
+	.list__item {
 		margin: 25px 40px 0;
 		display: flex;
 		justify-content: center;
@@ -34,7 +34,7 @@
 		border-radius: 7px;
 	}
 
-	.menu__list__item__card {
+	.item__card {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -46,13 +46,13 @@
 		border-radius: 7px;
 	}
 
-	.menu__list__item__card h3 {
+	.item__card h3 {
 		margin: 0 auto;
 		font-size: 23px;
 		text-transform: uppercase;
 	}
 
-	.menu__list__item__card p {
+	.item__card p {
 		height: 90px;
 		letter-spacing: -1px;
 		line-height: 18px;
@@ -62,7 +62,7 @@
 		margin: 0 7px;
 	}
 
-	.card-button {
+	.cart__button {
 		width: 105px;
 		height: 33px;
 		color: #e3dcc3;
@@ -72,13 +72,13 @@
 		font-size: 14px;
 	}
 
-	.card-price {
+	.card__price {
 		display: flex;
 		align-items: center;
 		gap: 15px;
 	}
 
-	.card-price h5 {
+	.card__price h5 {
 		font-size: 15px;
 		margin: 0 auto;
 	}
