@@ -4,23 +4,23 @@
 			<Navbar />
 			<div class="contacts">
 				<h2>contacts 連絡先</h2>
-				<div class="contacts__block">
-					<div class="contacts__block__information">
-						<div class="contacts__block__information__address">
+				<div class="contacts__block block">
+					<div class="block__information information">
+						<div class="information__address">
 							<h4>Our address</h4>
 							<h5>45454 Kelsie Village Apt. 099</h5>
 						</div>
-						<div class="contacts__block__information__hours">
+						<div class="information__hours">
 							<h4>Working hours</h4>
 							<h5>9 am - 11 pm</h5>
 						</div>
-						<div class="contacts__block__information__phone">
+						<div class="information__phone">
 							<h4>Our phone</h4>
 							<h5>952.599.8789 x9305</h5>
 						</div>
-						<div class="contacts__block__information__social">
+						<div class="information__social social">
 							<h4>Social networks</h4>
-							<div class="social">
+							<div class="social__links">
 								<a href="#"
 									><img
 										src="../assets/Instagram.svg"
@@ -84,7 +84,7 @@
 		gap: 218px;
 	}
 
-	.contacts__block__information h4 {
+	.block__information h4 {
 		color: #262524;
 		font-size: 23px;
 		font-weight: 700;
@@ -92,41 +92,41 @@
 		margin: 0;
 	}
 
-	.contacts__block__information h5 {
+	.block__information h5 {
 		color: #262524;
 		font-size: 20px;
 		font-weight: 400;
 		margin: 0;
 	}
 
-	.contacts__block__information__address {
+	.information__address {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		margin: 0 0 40px;
 	}
 
-	.contacts__block__information__hours {
+	.information__hours {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		margin: 0 0 40px;
 	}
 
-	.contacts__block__information__phone {
+	.information__phone {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		margin: 0 0 40px;
 	}
 
-	.contacts__block__information__social {
+	.information__social {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 	}
 
-	.social {
+	.social__links {
 		display: flex;
 		gap: 33px;
 	}
