@@ -16,6 +16,7 @@
 		padding: 30px 0 0;
 		height: 100vh;
 		background-size: cover;
+		box-sizing: border-box;
 	}
 </style>
 
@@ -35,7 +36,7 @@
 	const app = initializeApp(firebaseConfig);
 	const db = getFirestore(app);
 
-  export default {
-    name: "App",
-};
+	export default {
+		name: "App",
+	};
 </script>

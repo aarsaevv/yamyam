@@ -138,7 +138,7 @@
 	.menu__navigation {
 		display: flex;
 		justify-content: space-between;
-		margin: 30px 0 0 0;
+		margin: 25px 0 0 0;
 		font-size: 37px;
 		font-weight: 900;
 	}
@@ -154,7 +154,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 79px;
-		margin: 30px 0 0 0;
+		margin: 25px 0 0 0;
 	}
 
 	.menu__list__item {
