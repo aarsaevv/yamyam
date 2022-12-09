@@ -10,10 +10,10 @@
 						<h2><span>A</span>romatic</h2>
 						<h2><span>M</span>outh-watering</h2>
 					</div>
-					<div class="main__block__button">
+					<button class="main__block__button">
 						<div class="button__text">Ramen</div>
 						<div class="button__outline"></div>
-					</div>
+					</button>
 				</div>
 				<div class="main__image">
 					<img
