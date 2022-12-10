@@ -12,12 +12,17 @@
 		padding: 0;
 	}
 
-	.container {
+	.page-container {
 		padding: 30px 0 0;
 		height: 100vh;
 		width: 100vw;
 		background-repeat: no-repeat;
 		box-sizing: border-box;
+	}
+
+	.page-container__content {
+		width: 1140px;
+		margin: 0 auto;
 	}
 </style>
 

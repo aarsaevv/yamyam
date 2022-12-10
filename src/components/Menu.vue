@@ -1,6 +1,6 @@
 <template>
-	<div class="container">
-		<div class="our-menu">
+	<div class="page-container">
+		<div class="page-container__content">
 			<Navbar />
 			<div class="menu">
 				<div class="menu__navigation">
@@ -31,13 +31,8 @@
 	};
 </script>
 <style scoped>
-	.container {
+	.page-container {
 		background-image: url("../assets/background.png");
-	}
-
-	.our-menu {
-		width: 1140px;
-		margin: 0 auto;
 	}
 
 	.menu__navigation {

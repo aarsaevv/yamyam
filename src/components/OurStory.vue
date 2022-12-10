@@ -1,6 +1,6 @@
 <template>
-	<div class="container">
-		<div class="our-story">
+	<div class="page-container">
+		<div class="page-container__content">
 			<Navbar />
 			<div class="story">
 				<div class="story__about-us">
@@ -55,16 +55,14 @@
 	};
 </script>
 <style scoped>
-	.container {
+	.page-container {
 		background-image: url("../assets/background-story.png");
 	}
 
-	.our-story {
+	.page-container__content {
 		display: flex;
 		flex-direction: column;
 		gap: 50px;
-		width: 1140px;
-		margin: 0 auto;
 	}
 
 	.story h2 {

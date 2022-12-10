@@ -1,6 +1,6 @@
 <template>
-	<div class="container">
-		<div class="our-contacts">
+	<div class="page-container">
+		<div class="page-container__content">
 			<Navbar />
 			<div class="contacts">
 				<h2>contacts 連絡先</h2>
@@ -58,13 +58,8 @@
 	};
 </script>
 <style>
-	.container {
+	.page-container {
 		background-image: url("../assets/background-contacts.png");
-	}
-
-	.our-contacts {
-		width: 1140px;
-		margin: 0 auto;
 	}
 
 	.contacts h2 {

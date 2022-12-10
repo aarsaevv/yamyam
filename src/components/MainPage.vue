@@ -1,43 +1,45 @@
 <template>
-	<div class="container">
-		<div class="main-page">
+	<div class="page-container">
+		<div class="page-container__content">
 			<Navbar />
-			<div class="main-page__content main">
-				<div class="main__block block">
-					<div class="block__text">
-						<h1>Hello! こんにちは！</h1>
-						<h2><span>Y</span>ummy</h2>
-						<h2><span>A</span>romatic</h2>
-						<h2><span>M</span>outh-watering</h2>
+			<div class="main-page">
+				<div class="main-page__content main">
+					<div class="main__block block">
+						<div class="block__text">
+							<h1>Hello! こんにちは！</h1>
+							<h2><span>Y</span>ummy</h2>
+							<h2><span>A</span>romatic</h2>
+							<h2><span>M</span>outh-watering</h2>
+						</div>
+						<button class="block__button button">
+							<div class="button__text">Ramen</div>
+							<div class="button__outline"></div>
+						</button>
 					</div>
-					<button class="block__button button">
-						<div class="button__text">Ramen</div>
-						<div class="button__outline"></div>
-					</button>
+					<div class="main__image">
+						<img
+							src="../assets/ramen-cat-with-noodle.png"
+							alt="Ramen" />
+					</div>
 				</div>
-				<div class="main__image">
-					<img
-						src="../assets/ramen-cat-with-noodle.png"
-						alt="Ramen" />
-				</div>
-			</div>
-			<div class="main-page__footer footer">
-				<div class="footer__buttons">
-					<a href="#"
-						><img
-							src="../assets/instagram-red.svg"
-							alt="Instagram"
-					/></a>
-					<a href="#"
-						><img
-							src="../assets/facebook-red.svg"
-							alt="Facebook"
-					/></a>
-					<a href="#"
-						><img
-							src="../assets/twitter-red.svg"
-							alt="Twitter"
-					/></a>
+				<div class="main-page__footer footer">
+					<div class="footer__buttons">
+						<a href="#"
+							><img
+								src="../assets/instagram-red.svg"
+								alt="Instagram"
+						/></a>
+						<a href="#"
+							><img
+								src="../assets/facebook-red.svg"
+								alt="Facebook"
+						/></a>
+						<a href="#"
+							><img
+								src="../assets/twitter-red.svg"
+								alt="Twitter"
+						/></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -52,13 +54,8 @@
 	};
 </script>
 <style scoped>
-	.container {
+	.page-container {
 		background-image: url("../assets/background.png");
-	}
-
-	.main-page {
-		width: 1140px;
-		margin: 0 auto;
 	}
 
 	.main-page__content {
