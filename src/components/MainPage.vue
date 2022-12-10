@@ -1,8 +1,8 @@
 <template>
 	<div class="container">
-		<div class="main-page page">
+		<div class="main-page">
 			<Navbar />
-			<div class="page__content main">
+			<div class="main-page__content main">
 				<div class="main__block block">
 					<div class="block__text">
 						<h1>Hello! こんにちは！</h1>
@@ -21,7 +21,7 @@
 						alt="Ramen" />
 				</div>
 			</div>
-			<div class="page__footer footer">
+			<div class="main-page__footer footer">
 				<div class="footer__buttons">
 					<a href="#"
 						><img
@@ -61,7 +61,7 @@
 		margin: 0 auto;
 	}
 
-	.page__content {
+	.main-page__content {
 		display: flex;
 		align-items: center;
 		gap: 20px;
@@ -132,7 +132,7 @@
 		height: 750px;
 	}
 
-	.page__footer {
+	.main-page__footer {
 		display: flex;
 		justify-content: center;
 	}
