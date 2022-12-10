@@ -1,15 +1,13 @@
 <template>
-    <Cart />
-  </template>
-  
-  <script>
-  import Cart from "@/components/Cart.vue";
-  import MainPage from "@/components/MainPage.vue";
-  export default {
-    name: "HomeView",
-    components: {
-    MainPage,
-    Cart
-},
-  };
-  </script>
+	<Cart />
+</template>
+
+<script>
+	import Cart from "@/components/Cart.vue";
+	export default {
+		name: "CartView",
+		components: {
+			Cart,
+		},
+	};
+</script>

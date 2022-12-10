@@ -22,8 +22,8 @@
 	</div>
 </template>
 <script>
-	import MenuListItem from "./UI/MenuListItem.vue";
 	import Navbar from "./UI/Navbar.vue";
+	import MenuListItem from "./UI/MenuListItem.vue";
 
 	export default {
 		name: "Menu",

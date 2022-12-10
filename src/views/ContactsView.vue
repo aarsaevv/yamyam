@@ -1,15 +1,13 @@
 <template>
-  <Contacts />
+	<Contacts />
 </template>
 
 <script>
-import Contacts from "@/components/Contacts.vue";
-import MainPage from "@/components/MainPage.vue";
-export default {
-  name: "HomeView",
-  components: {
-    MainPage,
-    Contacts
-},
-};
+	import Contacts from "@/components/Contacts.vue";
+	export default {
+		name: "ContactsView",
+		components: {
+			Contacts,
+		},
+	};
 </script>

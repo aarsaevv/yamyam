@@ -5,9 +5,7 @@
 <script>
 	import Menu from "@/components/Menu.vue";
 	export default {
-		name: "AboutView",
-		components: {
-			Menu,
-		},
+		name: "MenuView",
+		components: { Menu },
 	};
 </script>
