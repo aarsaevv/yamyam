@@ -21,21 +21,7 @@
 						<div class="information__social social">
 							<h4>Social networks</h4>
 							<div class="social__links">
-								<a href="#"
-									><img
-										src="../assets/Instagram.svg"
-										alt="Instagram"
-								/></a>
-								<a href="#"
-									><img
-										src="../assets/Facebook.svg"
-										alt="Facebook"
-								/></a>
-								<a href="#"
-									><img
-										src="../assets/Twitter.svg"
-										alt="Twitter"
-								/></a>
+								<SocialLinks />
 							</div>
 						</div>
 					</div>
@@ -51,10 +37,11 @@
 </template>
 <script>
 	import Navbar from "./UI/Navbar.vue";
+	import SocialLinks from "./UI/SocialLinks.vue";
 
 	export default {
 		name: "Contacts",
-		components: { Navbar },
+		components: { Navbar, SocialLinks },
 	};
 </script>
 <style>
@@ -65,7 +52,7 @@
 	.contacts h2 {
 		display: flex;
 		justify-content: center;
-		margin: 30px 0;
+		margin: 25px 0;
 		height: 60px;
 		color: #262524;
 		font-size: 37px;
@@ -124,5 +111,7 @@
 	.social__links {
 		display: flex;
 		gap: 33px;
+		filter: invert(12%) sepia(10%) saturate(169%) hue-rotate(349deg)
+			brightness(96%) contrast(92%);
 	}
 </style>

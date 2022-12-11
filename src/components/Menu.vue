@@ -23,6 +23,7 @@
 </template>
 <script>
 	import Navbar from "./UI/Navbar.vue";
+
 	import MenuListItem from "./UI/MenuListItem.vue";
 
 	export default {

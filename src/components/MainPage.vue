@@ -22,23 +22,9 @@
 							alt="Ramen" />
 					</div>
 				</div>
-				<div class="main-page__footer footer">
-					<div class="footer__buttons">
-						<a href="#"
-							><img
-								src="../assets/instagram-red.svg"
-								alt="Instagram"
-						/></a>
-						<a href="#"
-							><img
-								src="../assets/facebook-red.svg"
-								alt="Facebook"
-						/></a>
-						<a href="#"
-							><img
-								src="../assets/twitter-red.svg"
-								alt="Twitter"
-						/></a>
+				<div class="main-page__footer social">
+					<div class="social__links">
+						<SocialLinks />
 					</div>
 				</div>
 			</div>
@@ -47,15 +33,20 @@
 </template>
 <script>
 	import Navbar from "./UI/Navbar.vue";
-
+	import SocialLinks from "./UI/SocialLinks.vue";
 	export default {
 		name: "MainPage",
-		components: { Navbar },
+		components: { Navbar, SocialLinks },
 	};
 </script>
 <style scoped>
 	.page-container {
 		background-image: url("../assets/background.png");
+	}
+
+	.main-page {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.main-page__content {
@@ -134,9 +125,8 @@
 		justify-content: center;
 	}
 
-	.footer__buttons {
-		display: flex;
-		gap: 33px;
-		align-items: center;
+	.social__links {
+		filter: invert(30%) sepia(20%) saturate(6271%) hue-rotate(342deg)
+			brightness(87%) contrast(86%);
 	}
 </style>
