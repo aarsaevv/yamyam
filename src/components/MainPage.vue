@@ -117,7 +117,7 @@
 
 	.main__image {
 		width: 750px;
-		height: 750px;
+		height: 100%;
 	}
 
 	.main-page__footer {
