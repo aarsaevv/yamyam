@@ -13,11 +13,9 @@
 	}
 
 	.page-container {
-		padding-top: 30px;
-		padding-left: calc(100vw - 100%);
+		padding: 30px 0 0;
 		height: 100vh;
-		width: 100%;
-
+		width: 100vw;
 		background-repeat: no-repeat;
 		box-sizing: border-box;
 	}
