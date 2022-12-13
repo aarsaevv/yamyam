@@ -126,7 +126,7 @@
 	}
 
 	.social__links {
-		filter: invert(30%) sepia(20%) saturate(6271%) hue-rotate(342deg)
-			brightness(87%) contrast(86%);
+		filter: invert(33%) sepia(32%) saturate(2893%) hue-rotate(335deg)
+			brightness(84%) contrast(93%);
 	}
 </style>
