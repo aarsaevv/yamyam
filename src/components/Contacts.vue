@@ -25,7 +25,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="contacts__block__map">
+					<div class="block__map">
 						<img
 							src="../assets/map.png"
 							alt="Map" />
