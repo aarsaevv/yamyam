@@ -65,6 +65,12 @@
 		gap: 25px;
 	}
 
+	.story {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
 	.story h2 {
 		font-size: 38px;
 		font-weight: 900;

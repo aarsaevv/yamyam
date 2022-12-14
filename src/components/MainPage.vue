@@ -108,7 +108,7 @@
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
-		top: 25%;
+		top: 30%;
 		left: 0;
 		right: 0;
 		text-align: center;

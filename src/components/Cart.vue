@@ -91,101 +91,111 @@
           />
         </div>
         <h2>delivery 配達</h2>
-        <div class="delivery-data">
-          <div class="delivery-data__credentials credentials">
-            <div class="credentials__name name">
-              <form class="name__first" action="">
-                <label for="">First name</label>
-                <input type="text" />
-              </form>
-              <form class="name__last" action="">
-                <label for="">Last name</label>
-                <input type="text" />
-              </form>
-            </div>
-            <form action="">
-              <label for="">Email address</label>
-              <input type="email" />
-            </form>
-            <form action="">
-              <label for="">Phone number</label>
-              <input type="number" />
-            </form>
-          </div>
-          <div class="delivery-data__address">
-            <form action="">
-              <label for="">Address line 1</label>
-              <input type="text" />
-            </form>
-            <form action="">
-              <label for="">Address line 2</label>
-              <input type="text" />
-            </form>
-          </div>
-          <div class="delivery-data__payment payment">
-            <form action="">
-              <label for="">Cardholder name</label>
-              <input type="text" />
-            </form>
-            <form action="">
-              <label for="">Card number</label>
-              <input type="text" />
-            </form>
-            <div class="payment__info info">
-              <form class="info__card-expired" action="">
-                <label for="">Card expired</label>
-                <input type="text" />
-              </form>
-              <form class="info__cvv" action="">
-                <label for="">CVV/CVC</label>
-                <input type="text" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="check">
-          <h3>Shopping cart</h3>
-          <div class="check__image">
-            <img src="../assets/mini-line.svg" alt="Line" />
-          </div>
-          <div class="check__delivery delivery">
-            <div class="delivery__item">
-              <h5>Miso ramen</h5>
-              <h5>12$</h5>
-            </div>
-            <div class="delivery__item">
-              <h5>Rice with shrimp</h5>
-              <h5>15$</h5>
-            </div>
-            <div class="delivery__item">
-              <h5>Wakame salad</h5>
-              <h5>10$</h5>
-            </div>
-          </div>
-          <div class="check__image">
-            <img src="../assets/mini-line.svg" alt="Line" />
-          </div>
-          <div class="check__subtotal subtotal">
-            <div class="subtotal__item">
-              <h5>Subtotal</h5>
-              <h5>37$</h5>
-            </div>
-            <div class="subtotal__item">
-              <h5>Tax</h5>
-              <h5>2.22$$</h5>
-            </div>
-            <div class="subtotal__item">
-              <h5>Delivery</h5>
-              <h5>8$</h5>
-            </div>
-            <div class="check__image">
-              <img src="../assets/mini-line.svg" alt="Line" />
-            </div>
-            <div class="check__total total">
-              <div class="total__item">
-                <h5>Total</h5>
-                <h5>47.22$</h5>
+        <div class="delivery">
+          <div class="delivery-data">
+            <div class="delivery-data__credentials credentials">
+              <div class="credentials__name name">
+                <form class="name__first" action="">
+                  <label for="">First name</label>
+                  <input type="text" />
+                </form>
+                <form class="name__last" action="">
+                  <label for="">Last name</label>
+                  <input type="text" />
+                </form>
               </div>
+              <form action="">
+                <label for="">Email address</label>
+                <input type="email" />
+              </form>
+              <form action="">
+                <label for="">Phone number</label>
+                <input type="number" />
+              </form>
+            </div>
+            <div class="delivery-data__address">
+              <form action="">
+                <label for="">Address line 1</label>
+                <input type="text" />
+              </form>
+              <form action="">
+                <label for="">Address line 2</label>
+                <input type="text" />
+              </form>
+            </div>
+            <div class="delivery-data__payment payment">
+              <form action="">
+                <label for="">Cardholder name</label>
+                <input type="text" />
+              </form>
+              <form action="">
+                <label for="">Card number</label>
+                <input type="text" />
+              </form>
+              <div class="payment__info info">
+                <form class="info__card-expired" action="">
+                  <label for="">Card expired</label>
+                  <input type="text" />
+                </form>
+                <form class="info__cvv" action="">
+                  <label for="">CVV/CVC</label>
+                  <input type="text" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="delivery__check">
+            <div class="check">
+              <h3>Shopping cart</h3>
+              <div class="check__image">
+                <img src="../assets/mini-line.svg" alt="Line" />
+              </div>
+              <div class="check__delivery delivery">
+                <div class="delivery__item">
+                  <h5>Miso ramen</h5>
+                  <h5>12$</h5>
+                </div>
+                <div class="delivery__item">
+                  <h5>Rice with shrimp</h5>
+                  <h5>15$</h5>
+                </div>
+                <div class="delivery__item">
+                  <h5>Wakame salad</h5>
+                  <h5>10$</h5>
+                </div>
+              </div>
+              <div class="check__image">
+                <img src="../assets/mini-line.svg" alt="Line" />
+              </div>
+              <div class="check__subtotal subtotal">
+                <div class="subtotal__item">
+                  <h5>Subtotal</h5>
+                  <h5>37$</h5>
+                </div>
+                <div class="subtotal__item">
+                  <h5>Tax</h5>
+                  <h5>2.22$$</h5>
+                </div>
+                <div class="subtotal__item">
+                  <h5>Delivery</h5>
+                  <h5>8$</h5>
+                </div>
+                <div class="check__image">
+                  <img src="../assets/mini-line.svg" alt="Line" />
+                </div>
+                <div class="check__total total">
+                  <div class="total__item">
+                    <h5>Total</h5>
+                    <h5>47.22$</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="delivery__button">
+              <button class="block__button button">
+                <div class="button__text">Proceed to pay</div>
+                <div class="button__outline"></div>
+              </button>
             </div>
           </div>
         </div>
@@ -201,12 +211,15 @@ export default {
   components: { Navbar },
 };
 </script>
+<style>
+.page-container {
+  background-image: url("../assets/background-contacts.png");
+}
 
-<style scoped>
 .cart h2 {
   display: flex;
   justify-content: center;
-  margin: 45px 0;
+  margin: 25px 0;
   height: 60px;
   color: #262524;
   font-size: 37px;
@@ -271,6 +284,7 @@ export default {
 
 .item__buttons-amount {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -293,6 +307,12 @@ export default {
 .cart-items__line {
   width: 945px;
   margin: 25px 0 30px 0;
+}
+
+.delivery {
+  display: flex;
+  justify-content: center;
+  gap: 98px;
 }
 
 form {
@@ -362,6 +382,12 @@ form input {
   width: 221px;
 }
 
+.delivery__check {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .check {
   display: flex;
   flex-direction: column;
@@ -393,6 +419,7 @@ form input {
   height: 180px;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 10px;
   margin: 0 auto;
 }
@@ -439,5 +466,47 @@ form input {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+}
+
+.block__button {
+  position: relative;
+  margin: 0 0 0 10px;
+  width: 240px;
+  height: 70px;
+  background-color: #bf3c30;
+  color: #f1e2d2;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 7px;
+}
+
+.button__outline {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #262524;
+  border-radius: 7px;
+  top: 7px;
+  left: -10px;
+  z-index: -1;
+}
+
+.button__text {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.delivery__button {
+  display: flex;
+  justify-content: center;
 }
 </style>
