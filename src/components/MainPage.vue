@@ -16,11 +16,10 @@
 							<div class="button__outline"></div>
 						</button>
 					</div>
-					<div class="main__image">
-						<img
-							src="../assets/ramen-cat-with-noodle.png"
-							alt="Ramen" />
-					</div>
+					<img
+						class="main__image"
+						src="../assets/ramen-cat-with-noodle.png"
+						alt="Ramen" />
 				</div>
 				<div class="main-page__footer social">
 					<div class="social__links">
@@ -47,12 +46,13 @@
 	.main-page {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
+		height: calc(100vh - 110px);
 	}
 
 	.main-page__content {
 		display: flex;
 		align-items: center;
-		gap: 20px;
 	}
 
 	.block__text {
@@ -115,9 +115,14 @@
 		font-size: 23px;
 	}
 
+	@media screen and (max-width: 1540px) {
+		.main__image {
+			width: 500px;
+		}
+	}
+
 	.main__image {
-		width: 750px;
-		height: 100%;
+		width: 650px;
 	}
 
 	.main-page__footer {
