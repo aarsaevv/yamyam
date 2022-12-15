@@ -32,8 +32,9 @@
 				class="navbar__link"
 				to="/cart"
 				><img
-					src="../../assets/cart.svg"
+					:src="imageSource[currentSource]"
 					alt="Cart"
+					@click="changeCartIcon"
 			/></router-link>
 		</div>
 	</div>
@@ -42,6 +43,28 @@
 <script>
 	export default {
 		name: "Navbar",
+		data() {
+			return {
+				imageSource: [
+					require("@/assets/cart.svg"),
+					require("@/assets/red-cart.svg"),
+				],
+				currentSource: 0,
+				currentUrl: window.location.href,
+			};
+		},
+		mounted() {
+			if (this.currentUrl == "http://localhost:8080/#/cart") {
+				this.currentSource = Number(!Boolean(this.currentSource));
+			}
+		},
+		methods: {
+			changeCartIcon() {
+				console.log(this.currentUrl);
+				// this.currentSource = Number(!Boolean(this.currentSource));
+				// console.log(this.currentUrl);
+			},
+		},
 	};
 </script>
 
