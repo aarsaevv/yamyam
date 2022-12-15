@@ -54,16 +54,9 @@
 			};
 		},
 		mounted() {
-			if (this.currentUrl == "http://localhost:8080/#/cart") {
+			if (this.currentUrl.includes("/cart")) {
 				this.currentSource = Number(!Boolean(this.currentSource));
 			}
-		},
-		methods: {
-			changeCartIcon() {
-				console.log(this.currentUrl);
-				// this.currentSource = Number(!Boolean(this.currentSource));
-				// console.log(this.currentUrl);
-			},
 		},
 	};
 </script>
