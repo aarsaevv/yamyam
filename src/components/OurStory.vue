@@ -47,29 +47,30 @@
 	</div>
 </template>
 <script>
-	import Navbar from "./UI/Navbar.vue";
+import Navbar from "./UI/Navbar.vue";
 
-	export default {
-		name: "OurStory",
-		components: { Navbar },
-	};
+export default {
+  name: "OurStory",
+  components: { Navbar },
+};
 </script>
 <style scoped>
-	.page-container {
-		background-image: url("../assets/background-story.png");
-	}
+.page-container {
+  background-image: url("../assets/background-story-1920.png");
+}
 
-	.page-container__content {
-		display: flex;
-		flex-direction: column;
-		gap: 25px;
-	}
+.page-container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
-	.story {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
-	}
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 0 25px;
+}
 
 	.text__header {
 		font-size: 38px;
@@ -83,33 +84,52 @@
 		font-weight: 400;
 		margin: 0;
 	}
+.story h2 {
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-	.story__about-us {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 15px;
-		width: 760px;
-		height: 222px;
-		text-align: justify;
-	}
+.story h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
 
-	.story__our-team {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		margin-left: auto;
-		gap: 15px;
-		width: 760px;
-		height: 222px;
-		text-align: right;
-	}
+.story__about-us {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 760px;
+  height: 222px;
+  text-align: justify;
+}
 
-	.story__our-values {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 15px;
-		width: 760px;
-		height: 222px;
-		text-align: justify;
-	}
+.story__our-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: auto;
+  gap: 15px;
+  width: 760px;
+  height: 222px;
+  text-align: right;
+}
+
+.story__our-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 760px;
+  height: 222px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1540px) {
+  .page-container {
+    background-image: url("../assets/background-story-1536.png");
+	height: 100%;
+  }
+}
 </style>

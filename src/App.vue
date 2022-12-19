@@ -20,7 +20,6 @@ body {
 	padding-left: calc(100vw - 100%);
 	height: 100vh;
 	width: 100%;
-	background-repeat: no-repeat;
 	box-sizing: border-box;
 }
 

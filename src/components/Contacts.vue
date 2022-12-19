@@ -44,9 +44,9 @@ export default {
 	components: { Navbar, SocialLinks },
 };
 </script>
-<style>
+<style scoped>
 .page-container {
-	background-image: url("../assets/background-contacts.png");
+	background-image: url("../assets/background-contacts-1920.png");
 }
 
 .contacts h2 {
@@ -112,5 +112,11 @@ export default {
 	display: flex;
 	gap: 33px;
 	filter: invert(12%) sepia(10%) saturate(169%) hue-rotate(349deg) brightness(96%) contrast(92%);
+}
+
+@media screen and (max-width: 1540px) {
+  .page-container {
+    background-image: url("../assets/background-contacts-1536.png");
+  }
 }
 </style>
