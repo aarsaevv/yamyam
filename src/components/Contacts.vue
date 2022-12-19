@@ -26,9 +26,9 @@
 						</div>
 					</div>
 					<div class="block__map">
-						<img
-							src="../assets/map.png"
-							alt="Map" />
+						<iframe width="458" height="429" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00931358337404%2C40.71037756449121%2C-73.98922920227052%2C40.72174601295284&amp;layer=mapnik&amp;marker=40.71606203138471%2C-73.99927139282227"
+							style="border-radius: 7px;"></iframe>
 					</div>
 				</div>
 			</div>
@@ -36,82 +36,81 @@
 	</div>
 </template>
 <script>
-	import Navbar from "./UI/Navbar.vue";
-	import SocialLinks from "./UI/SocialLinks.vue";
+import Navbar from "./UI/Navbar.vue";
+import SocialLinks from "./UI/SocialLinks.vue";
 
-	export default {
-		name: "Contacts",
-		components: { Navbar, SocialLinks },
-	};
+export default {
+	name: "Contacts",
+	components: { Navbar, SocialLinks },
+};
 </script>
 <style>
-	.page-container {
-		background-image: url("../assets/background-contacts.png");
-	}
+.page-container {
+	background-image: url("../assets/background-contacts.png");
+}
 
-	.contacts h2 {
-		display: flex;
-		justify-content: center;
-		margin: 25px 0;
-		height: 60px;
-		color: #262524;
-		font-size: 37px;
-		font-weight: 900;
-		text-transform: uppercase;
-	}
+.contacts h2 {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0;
+	height: 60px;
+	color: #262524;
+	font-size: 37px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
 
-	.contacts__block {
-		display: flex;
-		justify-content: center;
-		gap: 218px;
-	}
+.contacts__block {
+	display: flex;
+	justify-content: center;
+	gap: 218px;
+}
 
-	.block__information h4 {
-		color: #262524;
-		font-size: 23px;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin: 0;
-	}
+.block__information h4 {
+	color: #262524;
+	font-size: 23px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
 
-	.block__information h5 {
-		color: #262524;
-		font-size: 20px;
-		font-weight: 400;
-		margin: 0;
-	}
+.block__information h5 {
+	color: #262524;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0;
+}
 
-	.information__address {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-		margin: 0 0 40px;
-	}
+.information__address {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 0 0 40px;
+}
 
-	.information__hours {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-		margin: 0 0 40px;
-	}
+.information__hours {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 0 0 40px;
+}
 
-	.information__phone {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-		margin: 0 0 40px;
-	}
+.information__phone {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 0 0 40px;
+}
 
-	.information__social {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-	}
+.information__social {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
 
-	.social__links {
-		display: flex;
-		gap: 33px;
-		filter: invert(12%) sepia(10%) saturate(169%) hue-rotate(349deg)
-			brightness(96%) contrast(92%);
-	}
+.social__links {
+	display: flex;
+	gap: 33px;
+	filter: invert(12%) sepia(10%) saturate(169%) hue-rotate(349deg) brightness(96%) contrast(92%);
+}
 </style>
