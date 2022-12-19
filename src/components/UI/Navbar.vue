@@ -8,8 +8,8 @@
 			<router-link class="navbar__link" to="/menu">Menu</router-link>
 			<router-link class="navbar__link" to="/our-story">Our Story</router-link>
 			<router-link class="navbar__link" to="/contacts">Contacts</router-link>
-			<router-link class="navbar__link" to="/cart"><img :src="imageSource[currentSource]" alt="Cart"
-					@click="changeCartIcon" /></router-link>
+			<router-link class="navbar__link" to="/cart"><img :src="imageSource[currentSource]"
+					alt="Cart" /></router-link>
 		</div>
 	</div>
 </template>
