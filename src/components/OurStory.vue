@@ -3,9 +3,9 @@
 		<div class="page-container__content">
 			<Navbar />
 			<div class="story">
-				<div class="story__about-us">
-					<h2>About Us 私たちに関しては</h2>
-					<h6>
+				<div class="story__about-us text">
+					<h2 class="text__header">About Us 私たちに関しては</h2>
+					<h6 class="text__body">
 						Ramen is Chinese in origin.<br />
 						The name was originally used for two other dishes, namely Chūka soba
 						and Shina soba. Both translate to “Chinese noodle”, but with
@@ -16,9 +16,9 @@
 						work, they instead ate in ramen restaurants.
 					</h6>
 				</div>
-				<div class="story__our-team">
-					<h2>Our team 私たちのチーム</h2>
-					<h6>
+				<div class="story__our-team text">
+					<h2 class="text__header">Our team 私たちのチーム</h2>
+					<h6 class="text__body">
 						Ramen is Chinese in origin.<br />
 						The name was originally used for two other dishes, namely Chūka soba
 						and Shina soba. Both translate to “Chinese noodle”, but with
@@ -29,9 +29,9 @@
 						work, they instead ate in ramen restaurants.
 					</h6>
 				</div>
-				<div class="story__our-values">
-					<h2>Our values 私達の価値</h2>
-					<h6>
+				<div class="story__our-values text">
+					<h2 class="text__header">Our values 私達の価値</h2>
+					<h6 class="text__body">
 						Ramen is Chinese in origin.<br />
 						The name was originally used for two other dishes, namely Chūka soba
 						and Shina soba. Both translate to “Chinese noodle”, but with
@@ -71,14 +71,14 @@
 		gap: 50px;
 	}
 
-	.story h2 {
+	.text__header {
 		font-size: 38px;
 		font-weight: 900;
 		text-transform: uppercase;
 		margin: 0;
 	}
 
-	.story h6 {
+	.text__body {
 		font-size: 18px;
 		font-weight: 400;
 		margin: 0;
