@@ -28,11 +28,7 @@
             </div>
             <img src="../assets/cross.svg" alt="Cross" />
           </div>
-          <img
-            class="cart-items__line"
-            src="../assets/grey-line.svg"
-            alt="Line"
-          />
+          <img class="cart-items__line" src="../assets/grey-line.svg" alt="Line" />
           <div class="cart-items__item">
             <div class="item__main-block">
               <img src="../assets/rice-menu.svg" alt="Rice" />
@@ -56,11 +52,7 @@
             </div>
             <img src="../assets/cross.svg" alt="Cross" />
           </div>
-          <img
-            class="cart-items__line"
-            src="../assets/grey-line.svg"
-            alt="Line"
-          />
+          <img class="cart-items__line" src="../assets/grey-line.svg" alt="Line" />
           <div class="cart-items__item">
             <div class="item__main-block">
               <img src="../assets/salad-menu.svg" alt="Salad" />
@@ -84,11 +76,7 @@
             </div>
             <img src="../assets/cross.svg" alt="Cross" />
           </div>
-          <img
-            class="cart-items__line"
-            src="../assets/grey-line.svg"
-            alt="Line"
-          />
+          <img class="cart-items__line" src="../assets/grey-line.svg" alt="Line" />
           <div class="cart-items__item">
             <div class="item__main-block">
               <img src="../assets/salad-menu.svg" alt="Salad" />
@@ -112,11 +100,7 @@
             </div>
             <img src="../assets/cross.svg" alt="Cross" />
           </div>
-          <img
-            class="cart-items__line"
-            src="../assets/grey-line.svg"
-            alt="Line"
-          />
+          <img class="cart-items__line" src="../assets/grey-line.svg" alt="Line" />
         </div>
         <h2>delivery 配達</h2>
         <div class="delivery">
@@ -505,6 +489,7 @@ form input {
 @media screen and (max-width: 1540px) {
   .page-container {
     background-image: url("../assets/background-cart-1536.png");
+    background-size: cover;
   }
 }
 </style>
