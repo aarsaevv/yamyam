@@ -10,6 +10,8 @@
 			<router-link class="navbar__link" to="/contacts">Contacts</router-link>
 			<router-link class="navbar__link" to="/cart"><img :src="imageSource[currentSource]"
 					alt="Cart" /></router-link>
+			<router-link class="navbar__link" to="/test"><img src="../../assets/wrench.svg" alt="Test"
+					width="30" /></router-link>
 		</div>
 	</div>
 </template>
