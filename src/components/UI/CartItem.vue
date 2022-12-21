@@ -2,10 +2,13 @@
   <div>
     <div class="cart-items__item">
       <div class="item__main-block">
-        <img src="../../assets/ramen-menu.svg" alt="Ramen" />
+        <img v-if="mealType === 'Ramen'" src="../../assets/ramen-menu.svg" alt="Picture" />
+        <img v-if="mealType === 'Soup'" src="../../assets/soup-menu.svg" alt="Picture" />
+        <img v-if="mealType === 'Salad'" src="../../assets/salad-menu.svg" alt="Picture" />
+        <img v-if="mealType === 'Rice'" src="../../assets/rice-menu.svg" alt="Picture" />
         <div class="main-block__text">
-          <h3>Miso ramen</h3>
-          <h5>Rich soup but a little bit spicy</h5>
+          <h3>{{ mealName }}</h3>
+          <h5>{{ mealShortDescription }}</h5>
         </div>
       </div>
       <div class="item__buttons-size">
@@ -14,7 +17,7 @@
         <button>XL</button>
       </div>
       <div class="item__price">
-        <h3>12$</h3>
+        <h3>{{ mealPrice }}$</h3>
       </div>
       <div class="item__buttons-amount">
         <button>+</button>
@@ -30,18 +33,20 @@
 <script>
 export default {
   name: "CartItem",
+  props: ["mealName", "mealShortDescription", "mealPrice", "mealType"],
 };
 </script>
 
 <style scoped>
 .cart-items__item {
   display: flex;
-  justify-content: center;
+  width: 945px;
+  justify-content: space-between;
   align-items: center;
-  gap: 76px;
 }
 
 .item__main-block {
+  width: 450px;
   display: flex;
   align-items: center;
   gap: 25px;

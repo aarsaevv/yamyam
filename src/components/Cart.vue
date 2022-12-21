@@ -5,9 +5,10 @@
       <div class="cart">
         <h2>Your cart あなたのカート</h2>
         <div class="cart-items">
-          <CartItem />
-          <CartItem />
-          <CartItem />
+          <CartItem v-if="mealIsAddedToCart === true" v-for="meal in meals" :mealIsAddedToCart="meal.mealIsAddedToCart"
+            :mealName="meal.mealName" :mealShortDescription="meal.mealShortDescription" :mealPicture="meal.mealPicture"
+            :mealPrice="meal.mealPrice" :mealWeight="meal.mealWeight" :mealType="meal.mealType" />
+          <div v-else>Cart is empty.</div>
         </div>
         <h2>delivery 配達</h2>
         <div class="delivery">
@@ -20,13 +21,55 @@
 </template>
 
 <script>
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import Navbar from "./UI/Navbar.vue";
 import CartItem from "./UI/CartItem.vue";
 import DeliveryInfo from "./UI/DeliveryInfo.vue";
 import DeliveryCheck from "./UI/DeliveryCheck.vue";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDdB-6O1Gd--6xtM9wl9quory9qushT5VI",
+  authDomain: "yamyam-f7b3c.firebaseapp.com",
+  projectId: "yamyam-f7b3c",
+  storageBucket: "yamyam-f7b3c.appspot.com",
+  messagingSenderId: "1038634120582",
+  appId: "1:1038634120582:web:ab504e8d7dfe892e3da807",
+};
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
 export default {
   name: "Cart",
   components: { Navbar, CartItem, DeliveryInfo, DeliveryCheck },
+  data() {
+    return {
+      mealDescription: "",
+      mealIsAddedToCart: false,
+      mealName: "",
+      mealPicture: "",
+      mealPrice: 0,
+      mealType: "",
+      mealWeight: 0,
+      mealShortDescription: "",
+      mealSize: "",
+      mealQuantity: 0,
+      meals: [],
+    };
+  },
+  mounted() {
+    this.getMealsFromDatabase();
+  },
+  methods: {
+    async getMealsFromDatabase() {
+      const querySnapshot = await getDocs(collection(db, "menu-items"));
+      querySnapshot.forEach((document) => {
+        this.meals.push(document.data());
+      });
+    },
+  },
 };
 </script>
 <style scoped>
@@ -39,7 +82,7 @@ export default {
 @media screen and (max-width: 1540px) {
   .page-container {
     background-image: url("../assets/background-cart-1536.png");
-    background-size: cover;
+    background-size: contain;
   }
 }
 
