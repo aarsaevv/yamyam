@@ -51,8 +51,8 @@
 			</div>
 			<AmountSelector />
 			<img
-				src="../../assets/cross.svg"
-				alt="Cross" />
+				src="../../assets/bin.svg"
+				alt="Bin" />
 		</div>
 		<img
 			class="cart-items__line"
