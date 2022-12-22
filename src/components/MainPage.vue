@@ -11,7 +11,7 @@
               <h2><span>A</span>romatic</h2>
               <h2><span>M</span>outh-watering</h2>
             </div>
-            <BigRedButton>RAMEN</BigRedButton>
+            <BigRedButton class="block__button">RAMEN</BigRedButton>
           </div>
           <img class="main__image" src="../assets/ramen-cat.png" alt="Ramen" />
         </div>
@@ -77,6 +77,10 @@ export default {
 
 h2 span {
   color: #bf3c30;
+}
+
+.block__button {
+  margin: 0 0 0 10px;
 }
 
 @media screen and (max-width: 1540px) {
