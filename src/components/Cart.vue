@@ -89,7 +89,7 @@
 	.page-container {
 		background-image: url("../assets/background-cart-1920.png");
 		height: 100%;
-		background-size: cover;
+		background-size: contain;
 	}
 
 	@media screen and (max-width: 1540px) {
