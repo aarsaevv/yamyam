@@ -10,22 +10,19 @@
 						>
 					</router-link>
 					<router-link
-						to="/menu/soup"
-						:class="this.$route.path === '/menu/soup' ? 'active' : ''">
+						to="/menu/soup">
 						<span :class="this.$route.path === '/menu/soup' ? 'active' : ''"
 							>soup スープ</span
 						>
 					</router-link>
 					<router-link
-						to="/menu/rice"
-						:class="this.$route.path === '/menu/rice' ? 'active' : ''">
+						to="/menu/rice">
 						<span :class="this.$route.path === '/menu/rice' ? 'active' : ''"
 							>rice ご飯</span
 						>
 					</router-link>
 					<router-link
-						to="/menu/salad"
-						:class="this.$route.path === '/menu/salad' ? 'active' : ''">
+						to="/menu/salad">
 						<span :class="this.$route.path === '/menu/salad' ? 'active' : ''"
 							>salad サラダ</span
 						>
@@ -42,8 +39,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -53,8 +50,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -64,8 +61,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -75,8 +72,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -84,8 +81,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 					</div>
@@ -123,9 +120,11 @@
 				mealIsAddedToCart: false,
 				mealName: "",
 				mealPicture: "",
-				mealPrice: 0,
+				mealPriceLarge: 0,
 				mealType: "",
-				mealWeight: 0,
+				mealWeightMedium: 0,
+				mealWeightLarge: 0,
+				mealWeightXL: 0,
 				mealShortDescription: "",
 				mealSize: "",
 				mealQuantity: 0,
