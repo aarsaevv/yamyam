@@ -10,22 +10,19 @@
 						>
 					</router-link>
 					<router-link
-						to="/menu/soup"
-						:class="this.$route.path === '/menu/soup' ? 'active' : ''">
+						to="/menu/soup">
 						<span :class="this.$route.path === '/menu/soup' ? 'active' : ''"
 							>soup スープ</span
 						>
 					</router-link>
 					<router-link
-						to="/menu/rice"
-						:class="this.$route.path === '/menu/rice' ? 'active' : ''">
+						to="/menu/rice">
 						<span :class="this.$route.path === '/menu/rice' ? 'active' : ''"
 							>rice ご飯</span
 						>
 					</router-link>
 					<router-link
-						to="/menu/salad"
-						:class="this.$route.path === '/menu/salad' ? 'active' : ''">
+						to="/menu/salad">
 						<span :class="this.$route.path === '/menu/salad' ? 'active' : ''"
 							>salad サラダ</span
 						>
