@@ -15,6 +15,24 @@ const routes = [
 		path: "/menu",
 		name: "menu",
 		component: MenuView,
+		children: [
+			{
+				path: "ramen",
+				component: MenuView,
+			},
+			{
+				path: "soup",
+				component: MenuView,
+			},
+			{
+				path: "salad",
+				component: MenuView,
+			},
+			{
+				path: "rice",
+				component: MenuView,
+			},
+		],
 	},
 	{
 		path: "/our-story",
@@ -36,7 +54,7 @@ const routes = [
 const router = createRouter({
 	history: createWebHistory(),
 	routes,
-	linkExactActiveClass: "active",
+	linkActiveClass: "active",
 });
 
 export default router;
