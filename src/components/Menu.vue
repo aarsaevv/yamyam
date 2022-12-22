@@ -39,8 +39,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -50,8 +50,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -61,8 +61,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -72,8 +72,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 						<MenuListItem
@@ -81,8 +81,8 @@
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
 							:mealPicture="meal.mealPicture"
-							:mealPrice="meal.mealPrice"
-							:mealWeight="meal.mealWeight"
+							:mealPriceLarge="meal.mealPriceLarge"
+							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
 							:mealIsAddedToCart="meal.mealIsAddedToCart" />
 					</div>
@@ -120,9 +120,11 @@
 				mealIsAddedToCart: false,
 				mealName: "",
 				mealPicture: "",
-				mealPrice: 0,
+				mealPriceLarge: 0,
 				mealType: "",
-				mealWeight: 0,
+				mealWeightMedium: 0,
+				mealWeightLarge: 0,
+				mealWeightXL: 0,
 				mealShortDescription: "",
 				mealSize: "",
 				mealQuantity: 0,

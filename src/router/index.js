@@ -19,6 +19,7 @@ const routes = [
 			{
 				path: '',
 				redirect: '/menu/ramen',
+				component: MenuView,
 			},
 			{
 				path: "ramen",
