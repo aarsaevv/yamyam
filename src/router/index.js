@@ -17,6 +17,10 @@ const routes = [
 		component: MenuView,
 		children: [
 			{
+				path: '',
+				redirect: '/menu/ramen',
+			},
+			{
 				path: "ramen",
 				component: MenuView,
 			},
