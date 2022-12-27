@@ -32,29 +32,16 @@
 </template>
 
 <script>
-	import { initializeApp } from "firebase/app";
-	import { getFirestore } from "firebase/firestore";
 	import { collection, getDocs } from "firebase/firestore";
+	import { db } from "../../firebase.init.js";
 	import Navbar from "./UI/Navbar.vue";
 	import CartItem from "./UI/CartItem.vue";
 	import DeliveryInfo from "./UI/DeliveryInfo.vue";
-	import DeliveryCheck from "./UI/DeliveryCheck.vue";
-
-	const firebaseConfig = {
-		apiKey: "AIzaSyDdB-6O1Gd--6xtM9wl9quory9qushT5VI",
-		authDomain: "yamyam-f7b3c.firebaseapp.com",
-		projectId: "yamyam-f7b3c",
-		storageBucket: "yamyam-f7b3c.appspot.com",
-		messagingSenderId: "1038634120582",
-		appId: "1:1038634120582:web:ab504e8d7dfe892e3da807",
-	};
-	const app = initializeApp(firebaseConfig);
-
-	const db = getFirestore(app);
+	import ShoppingCart from "./UI/ShoppingCart.vue";
 
 	export default {
 		name: "Cart",
-		components: { Navbar, CartItem, DeliveryInfo, DeliveryCheck },
+		components: { Navbar, CartItem, DeliveryInfo, ShoppingCart },
 		data() {
 			return {
 				mealIsAddedToCart: false,
