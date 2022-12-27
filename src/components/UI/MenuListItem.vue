@@ -51,6 +51,7 @@
 		props: [
 			"mealName",
 			"mealDescription",
+			"mealShortDescription",
 			"mealPriceLarge",
 			"mealWeightLarge",
 			"mealType",
@@ -63,7 +64,15 @@
 				if (localStorage.getItem("meals")) {
 					meals = JSON.parse(localStorage.getItem("meals"));
 				}
-				meals.push({ id: this.id, quantity: 1 });
+				meals.push({
+					id: this.id,
+					quantity: 0,
+					type: this.mealType,
+					name: this.mealName,
+					description: this.mealShortDescription,
+					weight: this.mealWeightLarge,
+					price: this.mealPriceLarge,
+				});
 				localStorage.setItem("meals", JSON.stringify(meals));
 			},
 			removeMeal() {

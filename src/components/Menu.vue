@@ -35,48 +35,58 @@
 							"
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
+							:mealShortDescription="meal.mealShortDescription"
 							:mealPicture="meal.mealPicture"
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
-							:mealType="meal.mealType" />
+							:mealType="meal.mealType"
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="
 								this.$route.path === '/menu/soup' && meal.mealType == 'Soup'
 							"
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
+							:mealShortDescription="meal.mealShortDescription"
 							:mealPicture="meal.mealPicture"
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
-							:mealType="meal.mealType" />
+							:mealType="meal.mealType"
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="
 								this.$route.path === '/menu/rice' && meal.mealType == 'Rice'
 							"
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
+							:mealShortDescription="meal.mealShortDescription"
 							:mealPicture="meal.mealPicture"
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
-							:mealType="meal.mealType" />
+							:mealType="meal.mealType"
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="
 								this.$route.path === '/menu/salad' && meal.mealType == 'Salad'
 							"
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
+							:mealShortDescription="meal.mealShortDescription"
 							:mealPicture="meal.mealPicture"
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
-							:mealType="meal.mealType" />
+							:mealType="meal.mealType"
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="this.$route.path === '/menu'"
 							:mealName="meal.mealName"
 							:mealDescription="meal.mealDescription"
+							:mealShortDescription="meal.mealShortDescription"
 							:mealPicture="meal.mealPicture"
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
-							:mealType="meal.mealType" />
+							:mealType="meal.mealType"
+							:id="meal.id" />
 					</div>
 				</div>
 			</div>
@@ -113,7 +123,6 @@
 					document.id = arrayOfIDs[index];
 					return document.id;
 				});
-				console.log(this.meals);
 			},
 		},
 	};
