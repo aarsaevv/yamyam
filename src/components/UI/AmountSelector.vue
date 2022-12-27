@@ -21,7 +21,7 @@
 				}
 			},
 			decreaseAmountCounter() {
-				if (this.amountCounter > 0) {
+				if (this.amountCounter > 1) {
 					this.amountCounter--;
 				}
 			},

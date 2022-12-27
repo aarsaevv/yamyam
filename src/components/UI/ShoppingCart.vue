@@ -58,8 +58,9 @@
 import BigRedButton from "./BigRedButton.vue";
 
 export default {
-  name: "DeliveryCheck",
+  name: "ShoppingCart",
   components: { BigRedButton },
+  props: ["meals"],
 };
 </script>
 
