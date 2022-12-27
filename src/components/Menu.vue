@@ -86,7 +86,7 @@
 
 <script>
 	import { collection, getDocs } from "firebase/firestore";
-	import { db } from "../../firebase.init.js"
+	import { db } from "../../firebase.init.js";
 	import Navbar from "./UI/Navbar.vue";
 	import MenuListItem from "./UI/MenuListItem.vue";
 
@@ -103,10 +103,17 @@
 		},
 		methods: {
 			async getMealsFromDatabase() {
+				let arrayOfIDs = [];
 				const querySnapshot = await getDocs(collection(db, "menu-items"));
 				querySnapshot.forEach((document) => {
 					this.meals.push(document.data());
+					arrayOfIDs.push(document.id);
 				});
+				this.meals.map((document, index) => {
+					document.id = arrayOfIDs[index];
+					return document.id;
+				});
+				console.log(this.meals);
 			},
 		},
 	};
