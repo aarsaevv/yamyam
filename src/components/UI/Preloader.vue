@@ -1,0 +1,42 @@
+<template>
+  <div>
+    <div class="loader"></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "TestAnimation",
+};
+</script>
+
+<style scoped>
+.loader {
+  border: 10px solid #f1e2d2;
+  border-top: 10px solid #bf3c30;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(80deg);
+  }
+  60% {
+    transform: rotate(260deg);
+  }
+
+  80% {
+    transform: rotate(320deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>

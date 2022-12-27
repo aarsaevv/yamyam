@@ -66,7 +66,7 @@ button {
   background: #bf3c30;
   border: 2px solid #262524;
   border-radius: 7px;
-  transition: transform 0.15s;
+  transition: transform 0.10s;
   transform-style: preserve-3d;
 }
 
@@ -83,7 +83,7 @@ button {
   border-radius: inherit;
   box-shadow: 0 0 0 2px #262524;
   transform: translate3d(0, 0.5em, -1em);
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition: transform 0.10s, box-shadow 0.10s;
 }
 
 .block__button:active {

@@ -58,13 +58,13 @@
 	.page-container {
 		background-image: url("../assets/background-cart-1920.png");
 		height: 100%;
-		background-size: contain;
+		background-repeat: repeat;
 	}
 
 	@media screen and (max-width: 1540px) {
 		.page-container {
 			background-image: url("../assets/background-cart-1536.png");
-			background-size: cover;
+			background-repeat: repeat;
 		}
 	}
 

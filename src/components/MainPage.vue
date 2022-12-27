@@ -11,7 +11,11 @@
               <h2><span>A</span>romatic</h2>
               <h2><span>M</span>outh-watering</h2>
             </div>
-            <BigRedButton class="block__button">RAMEN</BigRedButton>
+            <router-link to="/menu"
+              ><BigRedButton class="block__button"
+                >RAMEN</BigRedButton
+              ></router-link
+            >
           </div>
           <img class="main__image" src="../assets/ramen-cat.png" alt="Ramen" />
         </div>
@@ -100,7 +104,6 @@ h2 span {
     font-size: 32px;
   }
 
-
   .main__image {
     display: block;
     width: 60%;
@@ -117,6 +120,7 @@ h2 span {
 }
 
 .social__links {
-  filter: invert(33%) sepia(32%) saturate(2893%) hue-rotate(335deg) brightness(84%) contrast(93%);
+  filter: invert(33%) sepia(32%) saturate(2893%) hue-rotate(335deg)
+    brightness(84%) contrast(93%);
 }
 </style>
