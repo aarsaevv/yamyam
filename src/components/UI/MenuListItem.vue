@@ -27,16 +27,17 @@
 				<h5>{{ mealPriceLarge }}$ / {{ mealWeightLarge }}g</h5>
 				<button
 					v-if="!isAddedToCart"
-					@click="toggleOrdered"
+					@click="addMeal"
 					class="cart__button">
 					<span>Add To Cart</span>
 				</button>
 				<div
 					v-else-if="isAddedToCart"
-					class="cart__amount-selector">
+					class="cart__amount-selector remove">
 					<AmountSelector />
 					<img
-						@click="toggleOrdered"
+						class="remove__button"
+						@click="removeMeal"
 						src="../../assets/bin.svg" />
 				</div>
 			</div>
@@ -53,17 +54,29 @@
 			"mealPriceLarge",
 			"mealWeightLarge",
 			"mealType",
-			"mealIsAddedToCart",
+			"id",
 		],
 		methods: {
-			toggleOrdered() {
+			addMeal() {
 				this.isAddedToCart = !this.isAddedToCart;
+				let meals = [];
+				if (localStorage.getItem("meals")) {
+					meals = JSON.parse(localStorage.getItem("meals"));
+				}
+				meals.push({ id: this.id, quantity: 1 });
+				localStorage.setItem("meals", JSON.stringify(meals));
+			},
+			removeMeal() {
+				this.isAddedToCart = !this.isAddedToCart;
+				let storageMeals = JSON.parse(localStorage.getItem("meals"));
+				let meals = storageMeals.filter((meal) => meal.id !== this.id);
+				localStorage.setItem("meals", JSON.stringify(meals));
 			},
 		},
 		components: { AmountSelector },
 		data() {
 			return {
-				isAddedToCart: this.mealIsAddedToCart,
+				isAddedToCart: false,
 			};
 		},
 	};
@@ -136,6 +149,10 @@
 		width: 105px;
 		height: 33px;
 		gap: 5px;
+	}
+
+	.cart__amount-selector .remove__button {
+		cursor: pointer;
 	}
 
 	.cart__amount-selector img {

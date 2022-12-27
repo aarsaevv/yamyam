@@ -24,7 +24,7 @@
 				<h2>delivery 配達</h2>
 				<div class="delivery">
 					<DeliveryInfo />
-					<DeliveryCheck />
+					<ShoppingCart />
 				</div>
 			</div>
 		</div>

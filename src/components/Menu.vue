@@ -42,7 +42,7 @@
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
-							:mealIsAddedToCart="meal.mealIsAddedToCart" />
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="
 								this.$route.path === '/menu/soup' && meal.mealType == 'Soup'
@@ -53,7 +53,7 @@
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
-							:mealIsAddedToCart="meal.mealIsAddedToCart" />
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="
 								this.$route.path === '/menu/rice' && meal.mealType == 'Rice'
@@ -64,7 +64,7 @@
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
-							:mealIsAddedToCart="meal.mealIsAddedToCart" />
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="
 								this.$route.path === '/menu/salad' && meal.mealType == 'Salad'
@@ -75,7 +75,7 @@
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
-							:mealIsAddedToCart="meal.mealIsAddedToCart" />
+							:id="meal.id" />
 						<MenuListItem
 							v-else-if="this.$route.path === '/menu'"
 							:mealName="meal.mealName"
@@ -84,7 +84,7 @@
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"
 							:mealType="meal.mealType"
-							:mealIsAddedToCart="meal.mealIsAddedToCart" />
+							:id="meal.id" />
 					</div>
 				</div>
 			</div>
@@ -96,6 +96,7 @@
 	import { initializeApp } from "firebase/app";
 	import { getFirestore } from "firebase/firestore";
 	import { collection, getDocs } from "firebase/firestore";
+	import { db } from "../../firebase.init.js";
 	import Navbar from "./UI/Navbar.vue";
 	import MenuListItem from "./UI/MenuListItem.vue";
 
@@ -136,10 +137,17 @@
 		},
 		methods: {
 			async getMealsFromDatabase() {
+				let arrayOfIDs = [];
 				const querySnapshot = await getDocs(collection(db, "menu-items"));
 				querySnapshot.forEach((document) => {
 					this.meals.push(document.data());
+					arrayOfIDs.push(document.id);
 				});
+				this.meals.map((document, index) => {
+					document.id = arrayOfIDs[index];
+					return document.id;
+				});
+				console.log(this.meals)
 			},
 		},
 	};
