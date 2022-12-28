@@ -95,6 +95,7 @@
 			};
 		},
 		methods: {
+			/** Некорректная реализация */
 			removeMeal(id) {
 				let storageMeals = JSON.parse(localStorage.getItem("meals"));
 				let meals = storageMeals.filter((item) => item.id !== id);
