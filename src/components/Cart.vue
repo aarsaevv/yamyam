@@ -11,8 +11,12 @@
 						:mealName="meal.name"
 						:mealShortDescription="meal.description"
 						:mealPicture="meal.mealPicture"
-						:mealPriceLarge="meal.price"
-						:mealWeightLarge="meal.weight"
+						:priceMD="meal.priceMD"
+						:weightMD="meal.weightMD"
+						:priceLG="meal.priceLG"
+						:weightLG="meal.weightLG"
+						:priceXL="meal.priceXL"
+						:weightXL="meal.weightXL"
 						:mealType="meal.type"
 						:id="meal.id" />
 					<div v-else>Cart is empty.</div>
@@ -48,7 +52,7 @@
 			async getOrderedFromMenu() {
 				if (localStorage.getItem("meals")) {
 					this.meals = JSON.parse(localStorage.getItem("meals"));
-					localStorage.setItem("meals", JSON.stringify(meals));
+					localStorage.setItem("meals", JSON.stringify(this.meals));
 				}
 			},
 		},
