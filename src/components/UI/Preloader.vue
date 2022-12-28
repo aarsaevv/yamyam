@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container__loader">
     <div class="loader"></div>
   </div>
 </template>
@@ -11,6 +11,15 @@ export default {
 </script>
 
 <style scoped>
+
+.container__loader{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .loader {
   border: 10px solid #f1e2d2;
   border-top: 10px solid #bf3c30;

@@ -68,6 +68,10 @@
 		}
 	}
 
+	.cart {
+		padding-bottom: 30px;
+	}
+
 	.cart h2 {
 		display: flex;
 		justify-content: center;
