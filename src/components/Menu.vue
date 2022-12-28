@@ -86,7 +86,7 @@
 							:mealDescription="meal.mealDescription"
 							:mealShortDescription="meal.mealShortDescription"
 							:mealPicture="meal.mealPicture"
-              :mealPriceMedium="meal.mealPriceMedium"
+							:mealPriceMedium="meal.mealPriceMedium"
 							:mealWeightMedium="meal.mealWeightMedium"
 							:mealPriceLarge="meal.mealPriceLarge"
 							:mealWeightLarge="meal.mealWeightLarge"

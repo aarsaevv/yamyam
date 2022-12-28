@@ -24,7 +24,7 @@
 				<h2>delivery 配達</h2>
 				<div class="delivery">
 					<DeliveryInfo />
-					<ShoppingCart />
+					<ShoppingCart :meals="meals" />
 				</div>
 			</div>
 		</div>
@@ -65,13 +65,6 @@
 		background-repeat: repeat;
 	}
 
-	@media screen and (max-width: 1540px) {
-		.page-container {
-			background-image: url("../assets/background-cart-1536.png");
-			background-repeat: repeat;
-		}
-	}
-
 	.cart {
 		padding-bottom: 30px;
 	}
@@ -97,5 +90,12 @@
 		display: flex;
 		justify-content: center;
 		gap: 98px;
+	}
+
+	@media screen and (max-width: 1540px) {
+		.page-container {
+			background-image: url("../assets/background-cart-1536.png");
+			background-repeat: repeat;
+		}
 	}
 </style>
