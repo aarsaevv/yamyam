@@ -6,7 +6,6 @@
 				<h2>Your cart あなたのカート</h2>
 				<div class="cart-items">
 					<CartItem
-						v-if="this.meals.length"
 						v-for="meal in meals"
 						:mealName="meal.name"
 						:mealShortDescription="meal.description"
@@ -19,7 +18,6 @@
 						:weightXL="meal.weightXL"
 						:mealType="meal.type"
 						:id="meal.id" />
-					<div v-else>Cart is empty.</div>
 				</div>
 				<h2>delivery 配達</h2>
 				<div class="delivery">
@@ -61,8 +59,8 @@
 <style scoped>
 	.page-container {
 		background-image: url("../assets/background-cart-1920.png");
-		height: 100%;
 		background-repeat: repeat;
+		height: 100%;
 	}
 
 	.cart {

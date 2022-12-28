@@ -3,7 +3,7 @@
 		<div class="page-container__content">
 			<Navbar />
 			<div class="story">
-				<div class="story__about-us text">
+				<div class="story__title text">
 					<h2 class="text__header">About Us 私たちに関しては</h2>
 					<h6 class="text__body">
 						Ramen is Chinese in origin.<br />
@@ -16,7 +16,7 @@
 						work, they instead ate in ramen restaurants.
 					</h6>
 				</div>
-				<div class="story__our-team text">
+				<div class="story__title-right text">
 					<h2 class="text__header">Our team 私たちのチーム</h2>
 					<h6 class="text__body">
 						Ramen is Chinese in origin.<br />
@@ -29,7 +29,7 @@
 						work, they instead ate in ramen restaurants.
 					</h6>
 				</div>
-				<div class="story__our-values text">
+				<div class="story__title text">
 					<h2 class="text__header">Our values 私達の価値</h2>
 					<h6 class="text__body">
 						Ramen is Chinese in origin.<br />
@@ -72,6 +72,26 @@
 		margin: 0 0 25px;
 	}
 
+	.story__title {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		width: 760px;
+		height: 222px;
+		text-align: justify;
+	}
+
+	.story__title-right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin-left: auto;
+		gap: 15px;
+		width: 760px;
+		height: 222px;
+		text-align: right;
+	}
+
 	.text__header {
 		font-size: 38px;
 		font-weight: 900;
@@ -83,47 +103,6 @@
 		font-size: 18px;
 		font-weight: 400;
 		margin: 0;
-	}
-	.story h2 {
-		font-size: 38px;
-		font-weight: 900;
-		text-transform: uppercase;
-		margin: 0;
-	}
-
-	.story h6 {
-		font-size: 18px;
-		font-weight: 400;
-		margin: 0;
-	}
-
-	.story__about-us {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 15px;
-		width: 760px;
-		height: 222px;
-		text-align: justify;
-	}
-
-	.story__our-team {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		margin-left: auto;
-		gap: 15px;
-		width: 760px;
-		height: 222px;
-		text-align: right;
-	}
-
-	.story__our-values {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 15px;
-		width: 760px;
-		height: 222px;
-		text-align: justify;
 	}
 
 	@media screen and (max-width: 1540px) {

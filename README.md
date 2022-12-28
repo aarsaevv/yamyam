@@ -1,5 +1,5 @@
 # yamyam
-Asian food delivery. For now this is frontend-only version. Works on Bootstrap 5 and vue.js 3. Layout was made on Figma.
+Asian food delivery. Vue.js 3, Firebase, Firestore DB. Layout was made on Figma, then HTML and CSS by @PeeWeeAnn.
 
 ## Project setup
 ```
@@ -18,4 +18,3 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-igma.igma.
