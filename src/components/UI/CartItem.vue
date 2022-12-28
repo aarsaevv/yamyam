@@ -46,13 +46,13 @@
 				</div>
 				<div class="item__price">
 					<h3 v-if="this.mealSize === 'medium'">
-						{{ mealPriceMedium }}$ / {{ mealWeightMedium }}g
+						{{ priceMD }}$ / {{ weightMD }}g
 					</h3>
 					<h3 v-if="this.mealSize === 'large'">
-						{{ mealPriceLarge }}$ / {{ mealWeightLarge }}g
+						{{ priceLG }}$ / {{ weightLG }}g
 					</h3>
 					<h3 v-if="this.mealSize === 'xl'">
-						{{ mealPriceXL }}$ / {{ mealWeightXL }}g
+						{{ priceXL }}$ / {{ weightXL }}g
 					</h3>
 				</div>
 				<AmountSelector />
@@ -77,12 +77,12 @@
 		props: [
 			"mealName",
 			"mealShortDescription",
-			"mealWeightMedium",
-			"mealWeightLarge",
-			"mealWeightXL",
-			"mealPriceMedium",
-			"mealPriceLarge",
-			"mealPriceXL",
+			"weightMD",
+			"weightLG",
+			"weightXL",
+			"priceMD",
+			"priceLG",
+			"priceXL",
 			"mealType",
 			"id",
 		],
