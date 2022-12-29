@@ -1,7 +1,8 @@
 <template>
 	<div class="page-container">
 		<div class="page-container__content">
-			<Navbar />
+			<NavbarMobile v-if="isMobile" />
+			<Navbar v-else />
 			<div class="main-page">
 				<div class="main-page__content main">
 					<div class="main__block block">
@@ -34,10 +35,16 @@
 <script>
 	import BigRedButton from "./UI/BigRedButton.vue";
 	import Navbar from "./UI/Navbar.vue";
+	import NavbarMobile from "./UI/NavbarMobile.vue"
 	import SocialLinks from "./UI/SocialLinks.vue";
 	export default {
 		name: "MainPage",
-		components: { BigRedButton, Navbar, SocialLinks },
+		components: { BigRedButton, Navbar, SocialLinks, NavbarMobile },
+		computed: {
+			isMobile() {
+				return (typeof screen.orientation === 'undefined')
+			}
+		}
 	};
 </script>
 <style scoped>
