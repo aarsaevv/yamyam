@@ -1,55 +1,54 @@
 <template>
-	<div>
-		<div class="delivery__check">
-			<div class="check">
-				<h3>Shopping cart</h3>
+	<div class="delivery__check">
+		<div class="check">
+			<h3>Shopping cart</h3>
+			<div class="check__image">
+				<img
+					src="../../assets/mini-line.svg"
+					alt="Line" />
+			</div>
+			<div class="check__delivery delivery">
+				<div
+					v-for="meal in meals"
+					:key="meal.id"
+					class="delivery__item">
+					<h5>{{ meal.name }}</h5>
+					<h5>{{ meal.priceLG }}$</h5>
+				</div>
+			</div>
+			<div class="check__image">
+				<img
+					src="../../assets/mini-line.svg"
+					alt="Line" />
+			</div>
+			<div class="check__subtotal subtotal">
+				<div class="subtotal__item">
+					<h5>Subtotal</h5>
+					<h5>{{ subtotal }}$</h5>
+				</div>
+				<div class="subtotal__item">
+					<h5>Tax</h5>
+					<h5>{{ tax }}$</h5>
+				</div>
+				<div class="subtotal__item">
+					<h5>Delivery</h5>
+					<h5>{{ delivery }}$</h5>
+				</div>
 				<div class="check__image">
 					<img
 						src="../../assets/mini-line.svg"
 						alt="Line" />
 				</div>
-				<div class="check__delivery delivery">
-					<div
-						v-for="meal in meals"
-						class="delivery__item">
-						<h5>{{ meal.name }}</h5>
-						<h5>{{ meal.priceLG }}$</h5>
-					</div>
-				</div>
-				<div class="check__image">
-					<img
-						src="../../assets/mini-line.svg"
-						alt="Line" />
-				</div>
-				<div class="check__subtotal subtotal">
-					<div class="subtotal__item">
-						<h5>Subtotal</h5>
-						<h5>{{ subtotal }}$</h5>
-					</div>
-					<div class="subtotal__item">
-						<h5>Tax</h5>
-						<h5>{{ tax }}$</h5>
-					</div>
-					<div class="subtotal__item">
-						<h5>Delivery</h5>
-						<h5>{{ delivery }}$</h5>
-					</div>
-					<div class="check__image">
-						<img
-							src="../../assets/mini-line.svg"
-							alt="Line" />
-					</div>
-					<div class="check__total total">
-						<div class="total__item">
-							<h5>Total</h5>
-							<h5>{{ total }}$</h5>
-						</div>
+				<div class="check__total total">
+					<div class="total__item">
+						<h5>Total</h5>
+						<h5>{{ total }}$</h5>
 					</div>
 				</div>
 			</div>
-			<div class="delivery__button">
-				<BigRedButton>PROCEED TO PAY</BigRedButton>
-			</div>
+		</div>
+		<div class="delivery__button">
+			<BigRedButton>PROCEED TO PAY</BigRedButton>
 		</div>
 	</div>
 </template>

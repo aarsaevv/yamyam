@@ -29,6 +29,7 @@
 					<div
 						v-if="meals.length"
 						v-for="meal in meals"
+						:key="meal.id"
 						class="list__item item">
 						<MenuListItem
 							v-if="
@@ -131,7 +132,7 @@
 				meals: [],
 			};
 		},
-		mounted() {
+		created() {
 			this.getMealsFromDatabase();
 		},
 		methods: {
@@ -173,6 +174,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		padding: 0 0 20px 0;
 	}
 
 	.active {

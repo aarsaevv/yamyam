@@ -64,13 +64,11 @@
 		methods: {
 			addMeal() {
 				this.isAddedToCart = !this.isAddedToCart;
-				let meals = [];
 				if (localStorage.getItem("meals")) {
-					meals = JSON.parse(localStorage.getItem("meals"));
+					this.meals = JSON.parse(localStorage.getItem("meals"));
 				}
-				meals.push({
+				this.meals.push({
 					id: this.id,
-					quantity: 0,
 					type: this.mealType,
 					name: this.mealName,
 					description: this.mealShortDescription,
@@ -81,18 +79,19 @@
 					weightXL: this.mealWeightXL,
 					priceXL: this.mealPriceXL,
 				});
-				localStorage.setItem("meals", JSON.stringify(meals));
+				localStorage.setItem("meals", JSON.stringify(this.meals));
 			},
 			removeMeal() {
 				this.isAddedToCart = !this.isAddedToCart;
 				let storageMeals = JSON.parse(localStorage.getItem("meals"));
-				let meals = storageMeals.filter((meal) => meal.id !== this.id);
-				localStorage.setItem("meals", JSON.stringify(meals));
+				this.meals = storageMeals.filter((meal) => meal.id !== this.id);
+				localStorage.setItem("meals", JSON.stringify(this.meals));
 			},
 		},
 		components: { AmountSelector },
 		data() {
 			return {
+				meals: [],
 				isAddedToCart: false,
 			};
 		},

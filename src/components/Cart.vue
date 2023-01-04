@@ -4,10 +4,17 @@
 			<Navbar />
 			<div class="cart">
 				<h2>Your cart あなたのカート</h2>
-				<div class="cart-items">
+				<div
+					v-if="cartIsEmpty"
+					class="cart__empty">
+					Cart is empty.
+				</div>
+				<div
+					v-else
+					class="cart__items">
 					<CartItem
-						v-if="this.meals.length"
 						v-for="meal in meals"
+						:key="meal.id"
 						:mealName="meal.name"
 						:mealShortDescription="meal.description"
 						:mealPicture="meal.mealPicture"
@@ -19,10 +26,11 @@
 						:weightXL="meal.weightXL"
 						:mealType="meal.type"
 						:id="meal.id" />
-					<div v-else>Cart is empty.</div>
 				</div>
-				<h2>delivery 配達</h2>
-				<div class="delivery">
+				<h2 v-if="meals.length">delivery 配達</h2>
+				<div
+					v-if="meals.length"
+					class="delivery">
 					<DeliveryInfo />
 					<ShoppingCart :meals="meals" />
 				</div>
@@ -45,6 +53,11 @@
 				meals: [],
 			};
 		},
+		computed: {
+			cartIsEmpty() {
+				return localStorage.getItem("meals") === "[]";
+			},
+		},
 		mounted() {
 			this.getOrderedFromMenu();
 		},
@@ -62,6 +75,7 @@
 	.page-container {
 		background-image: url("../assets/background-cart-1920.png");
 		background-repeat: repeat;
+		min-height: 100vh;
 		height: 100%;
 	}
 
@@ -80,10 +94,14 @@
 		text-transform: uppercase;
 	}
 
-	.cart-items {
+	.cart__items {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+	}
+
+	.cart__empty {
+		text-align: center;
 	}
 
 	.delivery {
