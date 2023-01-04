@@ -27,6 +27,11 @@ body {
 	width: 1140px;
 	margin: 0 auto;
 }
+
+.page-container__content-mobile {
+	width: 330px;
+	margin: 0 auto;
+}
 </style>
 
 <script>

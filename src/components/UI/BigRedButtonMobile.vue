@@ -7,42 +7,11 @@
 
 <script>
 export default {
-  name: "BigRedButton",
+  name: "BigRedButtonMobile",
 };
 </script>
 
 <style>
-/* .block__button {
-  position: relative;
-  margin: 0 0 0 10px;
-  width: 240px;
-  height: 70px;
-  background-color: #bf3c30;
-  color: #f1e2d2;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 7px;
-} */
-
-/* .button__outline {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #262524;
-    border-radius: 7px;
-    top: 7px;
-    left: -10px;
-    z-index: -1;
-} */
-
-/* .button__text {
-  text-align: center;
-  font-size: 22px;
-} */
-
 button {
   position: relative;
   display: inline-block;
@@ -52,13 +21,13 @@ button {
   border: 0;
   vertical-align: middle;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 18px;
   font-family: inherit;
 }
 
 .block__button {
-  width: 220px;
-  height: 70px;
+  width: 160px;
+  height: 50px;
   font-weight: 600;
   color: #f1e2d2;
   text-transform: uppercase;
