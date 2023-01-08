@@ -1,8 +1,8 @@
 <template>
 	<div class="item__buttons-amount">
-		<button @click="increaseAmountCounter">+</button>
-		{{ this.amountCounter }}
 		<button @click="decreaseAmountCounter">-</button>
+		{{ this.amountCounter }}
+		<button @click="increaseAmountCounter">+</button>
 	</div>
 </template>
 
@@ -50,5 +50,17 @@
 		margin: 0;
 		font-size: 18px;
 		font-weight: 400;
+	}
+
+	@media screen and (max-width: 400px) {
+		.item__buttons-amount button {
+			width: 23px;
+			height: 23px;
+			font-size: 15px;
+		}
+
+		.item__buttons-amount h5 {
+			font-size: 15px;
+		}
 	}
 </style>

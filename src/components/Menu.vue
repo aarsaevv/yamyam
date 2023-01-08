@@ -25,12 +25,10 @@
 						>
 					</router-link>
 				</div>
-				<div class="menu__list">
+				<div class="menu__list list">
 					<div
 						v-if="meals.length"
-						v-for="meal in meals"
-						:key="meal.id"
-						class="list__item item">
+						v-for="meal in meals">
 						<MenuListItem
 							v-if="
 								this.$route.path === '/menu/ramen' && meal.mealType == 'Ramen'
@@ -185,6 +183,24 @@
 		.page-container {
 			background-image: url("../assets/background-main-1536.png");
 			background-size: cover;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.page-container {
+			background: none;
+			background-color: #f1e2d2;
+		}
+
+		.menu__navigation {
+			flex-wrap: wrap;
+			font-size: 24px;
+			margin: 20px 0 5px;
+		}
+
+		.menu__list {
+			justify-content: flex-start;
+			width: 350px;
 		}
 	}
 </style>

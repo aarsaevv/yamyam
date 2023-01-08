@@ -9,9 +9,7 @@
 					class="cart__empty">
 					Cart is empty.
 				</div>
-				<div
-					v-else
-					class="cart__items">
+				<div class="cart__items">
 					<CartItem
 						v-for="meal in meals"
 						:key="meal.id"
@@ -114,6 +112,24 @@
 		.page-container {
 			background-image: url("../assets/background-cart-1536.png");
 			background-repeat: repeat;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.page-container {
+			background: none;
+			background-color: #f1e2d2;
+		}
+
+		.cart h2 {
+			margin: 20px 0;
+			height: 33px;
+			font-size: 24px;
+		}
+
+		.delivery {
+			flex-direction: column;
+			gap: 40px;
 		}
 	}
 </style>

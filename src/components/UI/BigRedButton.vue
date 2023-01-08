@@ -12,37 +12,6 @@ export default {
 </script>
 
 <style>
-/* .block__button {
-  position: relative;
-  margin: 0 0 0 10px;
-  width: 240px;
-  height: 70px;
-  background-color: #bf3c30;
-  color: #f1e2d2;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 7px;
-} */
-
-/* .button__outline {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #262524;
-    border-radius: 7px;
-    top: 7px;
-    left: -10px;
-    z-index: -1;
-} */
-
-/* .button__text {
-  text-align: center;
-  font-size: 22px;
-} */
-
 button {
   position: relative;
   display: inline-block;
@@ -62,11 +31,10 @@ button {
   font-weight: 600;
   color: #f1e2d2;
   text-transform: uppercase;
-  /* padding: 1.25em 2em; */
   background: #bf3c30;
   border: 2px solid #262524;
   border-radius: 7px;
-  transition: transform 0.10s;
+  transition: transform 0.1s;
   transform-style: preserve-3d;
 }
 
@@ -83,7 +51,7 @@ button {
   border-radius: inherit;
   box-shadow: 0 0 0 2px #262524;
   transform: translate3d(0, 0.5em, -1em);
-  transition: transform 0.10s, box-shadow 0.10s;
+  transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .block__button:active {
@@ -92,5 +60,15 @@ button {
 .block__button:active::before {
   transform: translate3d(0.5em, 0, -1em);
 }
+
+@media screen and (max-width: 400px) {
+  button {
+    font-size: 18px;
+  }
+
+  .block__button {
+    width: 180px;
+    height: 60px;
+  }
+}
 </style>
-s

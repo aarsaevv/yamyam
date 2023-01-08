@@ -178,4 +178,30 @@
 		display: flex;
 		justify-content: center;
 	}
+
+	@media screen and (max-width: 400px) {
+		.delivery__check {
+			gap: 20px;
+		}
+		.check {
+			width: 330px;
+			padding: 30px 0 30px 0;
+		}
+
+		.check h3 {
+			font-size: 24px;
+		}
+
+		.delivery__item h5 {
+			font-size: 16px;
+		}
+
+		.subtotal__item h5 {
+			font-size: 16px;
+		}
+
+		.total__item h5 {
+			font-size: 24px;
+		}
+	}
 </style>
