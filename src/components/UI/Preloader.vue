@@ -11,8 +11,7 @@ export default {
 </script>
 
 <style scoped>
-
-.container__loader{
+.container__loader {
   width: 100%;
   height: 70vh;
   display: flex;
@@ -43,9 +42,15 @@ export default {
   80% {
     transform: rotate(320deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container__loader {
+    width: 330px;
   }
 }
 </style>
