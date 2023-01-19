@@ -5,7 +5,7 @@
 			<div class="cart">
 				<h2>Your cart あなたのカート</h2>
 				<div
-					v-if="cartIsEmpty"
+					v-if="meals.length == 0"
 					class="cart__empty">
 					Cart is empty.
 				</div>
@@ -50,11 +50,6 @@
 			return {
 				meals: [],
 			};
-		},
-		computed: {
-			cartIsEmpty() {
-				return localStorage.getItem("meals") === "[]";
-			},
 		},
 		mounted() {
 			this.getOrderedFromMenu();
