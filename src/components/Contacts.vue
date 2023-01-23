@@ -156,7 +156,7 @@ export default {
   .contacts h2 {
     margin: 20px 0;
     height: 33px;
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .contacts__block {
@@ -204,7 +204,7 @@ export default {
     justify-content: center;
     margin: 20px 0;
     height: 33px;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 900;
     text-transform: uppercase;
   }

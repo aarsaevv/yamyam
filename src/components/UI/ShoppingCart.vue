@@ -189,7 +189,7 @@
 		}
 
 		.check h3 {
-			font-size: 24px;
+			font-size: 23px;
 		}
 
 		.delivery__item h5 {
@@ -201,7 +201,7 @@
 		}
 
 		.total__item h5 {
-			font-size: 24px;
+			font-size: 23px;
 		}
 	}
 </style>

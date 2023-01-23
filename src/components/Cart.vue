@@ -119,7 +119,7 @@
 		.cart h2 {
 			margin: 20px 0;
 			height: 33px;
-			font-size: 24px;
+			font-size: 23px;
 		}
 
 		.delivery {

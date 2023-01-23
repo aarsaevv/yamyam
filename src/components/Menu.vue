@@ -194,7 +194,7 @@
 
 		.menu__navigation {
 			flex-wrap: wrap;
-			font-size: 24px;
+			font-size: 23px;
 			margin: 20px 0 5px;
 		}
 

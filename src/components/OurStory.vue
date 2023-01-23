@@ -136,7 +136,7 @@ export default {
   }
 
   .text__header {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .text__body {
