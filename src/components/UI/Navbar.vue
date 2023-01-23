@@ -136,7 +136,7 @@
 		}
 
 		.link__navigation--mobile {
-			position: absolute;
+			position: fixed;
 			top: 0px;
 			right: 0px;
 			width: 40%;
@@ -144,7 +144,6 @@
 			padding: 18px;
 			background: #252624;
 			color: #f1e2d2;
-			transform: translateX(0%);
 			z-index: 100;
 		}
 
@@ -162,7 +161,7 @@
 		.navbar__close-button {
 			position: absolute;
 			top: 2px;
-			right: 6px;
+			right: 11px;
 		}
 	}
 </style>
