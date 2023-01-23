@@ -35,7 +35,9 @@
 					:class="mobileNavIsVisible ? '' : 'hidden'"
 					class="link__navigation--mobile"
 				>
-					<a @click="toggleNav()" class="navbar__link"><img src="../../assets/cross.svg" alt="Close" /></a>
+					<a @click="toggleNav()" class="navbar__close-button"
+						><img src="../../assets/cross.svg" alt="Close"
+					/></a>
 					<router-link class="navbar__link" to="/">Home</router-link>
 					<router-link class="navbar__link" to="/menu">Menu</router-link>
 					<router-link class="navbar__link" to="/our-story"
@@ -116,30 +118,6 @@
 		display: none;
 	}
 
-	.link__navigation--mobile {
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		width: 40%;
-		height: 100%;
-		padding: 18px;
-		background: #252624;
-		color: #f1e2d2;
-		transform: translateX(0%);
-		z-index: 100;
-	}
-
-	.link__navigation--mobile a {
-		display: flex;
-		justify-content: center;
-		padding: 0 0 20px 0;
-		color: #f1e2d2;
-	}
-
-	.link__navigation--mobile a:active {
-		color: #bf3c30;
-	}
-
 	@media screen and (max-width: 400px) {
 		.navbar {
 			display: none;
@@ -155,6 +133,36 @@
 			display: flex;
 			gap: 30px;
 			align-items: center;
+		}
+
+		.link__navigation--mobile {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 40%;
+			height: 100%;
+			padding: 18px;
+			background: #252624;
+			color: #f1e2d2;
+			transform: translateX(0%);
+			z-index: 100;
+		}
+
+		.link__navigation--mobile a {
+			display: flex;
+			justify-content: center;
+			padding: 18px 0 6px 0;
+			color: #f1e2d2;
+		}
+
+		.link__navigation--mobile a:active {
+			color: #bf3c30;
+		}
+
+		.navbar__close-button {
+			position: absolute;
+			top: 2px;
+			right: 6px;
 		}
 	}
 </style>
