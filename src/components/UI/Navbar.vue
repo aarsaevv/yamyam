@@ -32,7 +32,18 @@
 					<img src="../../assets/nav-burger.svg" alt="Navigation" />
 				</div>
 				<div
-					:class="mobileNavIsVisible ? '' : 'hidden'"
+					@wheel.prevent
+					@touchmove.prevent
+					@scroll.prevent
+					@click="toggleNav()"
+					:class="mobileNavIsVisible ? 'active' : 'hidden'"
+					class="tint"
+				></div>
+				<div
+					@wheel.prevent
+					@touchmove.prevent
+					@scroll.prevent
+					:class="mobileNavIsVisible ? 'active' : 'hidden'"
 					class="link__navigation--mobile"
 				>
 					<a @click="toggleNav()" class="navbar__close-button"
@@ -139,7 +150,7 @@
 			position: fixed;
 			top: 0px;
 			right: 0px;
-			width: 40%;
+			width: calc(100% - 57vw);
 			height: 100%;
 			padding: 18px;
 			background: #252624;
@@ -150,7 +161,7 @@
 		.link__navigation--mobile a {
 			display: flex;
 			justify-content: center;
-			padding: 18px 0 6px 0;
+			padding: 4px 0 16px 0;
 			color: #f1e2d2;
 		}
 
@@ -159,9 +170,20 @@
 		}
 
 		.navbar__close-button {
-			position: absolute;
+			position: relative;
+			right: -57px;
 			top: 2px;
-			right: 11px;
+			width: 45px;
+		}
+
+		.tint {
+			position: fixed;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.8);
+			width: calc(100% - 40vw);
+			top: 0px;
+			right: 180px;
+			z-index: 99;
 		}
 	}
 </style>
