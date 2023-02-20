@@ -46,7 +46,7 @@
 					:class="mobileNavIsVisible ? 'active' : 'hidden'"
 					class="link__navigation--mobile"
 				>
-					<a @click="toggleNav()" class="navbar__close-button"
+					<a href="#" @click="toggleNav()" class="navbar__close-button"
 						><img src="../../assets/cross.svg" alt="Close"
 					/></a>
 					<router-link class="navbar__link" to="/">Home</router-link>
