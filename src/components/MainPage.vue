@@ -15,7 +15,7 @@
               <BigRedButton class="block__button">RAMEN</BigRedButton>
             </router-link>
           </div>
-          <img class="main__image" src="../assets/ramen-cat.png" alt="Ramen" />
+          <img class="main__image" src="@/assets/img/ramen-cat.png" alt="Ramen" />
         </div>
         <div class="main-page__footer social">
           <div class="social__links">
@@ -26,22 +26,16 @@
     </div>
   </div>
 </template>
-<script>
+
+<script setup>
 import BigRedButton from "./UI/BigRedButton.vue";
 import Navbar from "./UI/Navbar.vue";
 import SocialLinks from "./UI/SocialLinks.vue";
-export default {
-  name: "MainPage",
-  components: {
-    BigRedButton,
-    Navbar,
-    SocialLinks,
-  },
-};
 </script>
+
 <style scoped>
 .page-container {
-  background-image: url("../assets/background-main-1920.png");
+  background-image: url("@/assets/img/backgrounds/background-main-1920.png");
 }
 
 .page-container__content {
@@ -105,7 +99,7 @@ h2 span {
 
 @media screen and (max-width: 1540px) {
   .page-container {
-    background-image: url("../assets/background-main-1536.png");
+    background-image: url("@/assets/img/backgrounds/background-main-1536.png");
   }
 
   .main-page {
@@ -128,8 +122,7 @@ h2 span {
 
 @media screen and (max-width: 400px) {
   .page-container {
-    background: none;
-    background-color: #f1e2d2;
+    background: #f1e2d2;
   }
 
   .main-page {

@@ -6,25 +6,25 @@
           <img
             v-if="mealType === 'Ramen'"
             class="item__image"
-            src="../../assets/ramen-menu.svg"
+            src="@/assets/img/icons/ramen-menu.svg"
             alt="Picture"
           />
           <img
             v-if="mealType === 'Soup'"
             class="item__image"
-            src="../../assets/soup-menu.svg"
+            src="@/assets/img/icons/soup-menu.svg"
             alt="Picture"
           />
           <img
             v-if="mealType === 'Salad'"
             class="item__image"
-            src="../../assets/salad-menu.svg"
+            src="@/assets/img/icons/salad-menu.svg"
             alt="Picture"
           />
           <img
             v-if="mealType === 'Rice'"
             class="item__image"
-            src="../../assets/rice-menu.svg"
+            src="@/assets/img/icons/rice-menu.svg"
             alt="Picture"
           />
           <div class="main-block__text">
@@ -71,7 +71,7 @@
         <img
           @click="removeMeal(id)"
           class="button__remove"
-          src="../../assets/bin.svg"
+          src="@/assets/img/icons/bin.svg"
           alt="Bin"
         />
       </div>
@@ -80,25 +80,25 @@
           <img
             v-if="mealType === 'Ramen'"
             class="item__image"
-            src="../../assets/ramen-menu.svg"
+            src="@/assets/img/icons/ramen-menu.svg"
             alt="Picture"
           />
           <img
             v-if="mealType === 'Soup'"
             class="item__image"
-            src="../../assets/soup-menu.svg"
+            src="@/assets/img/icons/soup-menu.svg"
             alt="Picture"
           />
           <img
             v-if="mealType === 'Salad'"
             class="item__image"
-            src="../../assets/salad-menu.svg"
+            src="@/assets/img/icons/salad-menu.svg"
             alt="Picture"
           />
           <img
             v-if="mealType === 'Rice'"
             class="item__image"
-            src="../../assets/rice-menu.svg"
+            src="@/assets/img/icons/rice-menu.svg"
             alt="Picture"
           />
           <div class="main-block__text">
@@ -146,13 +146,13 @@
         <img
           @click="removeMeal(id)"
           class="button__remove"
-          src="../../assets/bin.svg"
+          src="@/assets/img/icons/bin.svg"
           alt="Bin"
         />
       </div>
       <img
         class="cart-items__line"
-        src="../../assets/grey-line.svg"
+        src="@/assets/img/lines/grey-line.svg"
         alt="Line"
       />
     </div>
@@ -278,11 +278,6 @@ export default {
 .cart-items__line {
   width: 945px;
   margin: 25px 0 30px 0;
-}
-
-.selectedSize {
-  color: #f1e2d2;
-  background-color: #262524 !important;
 }
 
 @media screen and (max-width: 400px) {

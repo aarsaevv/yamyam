@@ -2,12 +2,6 @@
 	<Cart />
 </template>
 
-<script>
+<script setup>
 	import Cart from "@/components/Cart.vue";
-	export default {
-		name: "CartView",
-		components: {
-			Cart,
-		},
-	};
 </script>

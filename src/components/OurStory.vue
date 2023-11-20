@@ -46,17 +46,12 @@
     </div>
   </div>
 </template>
-<script>
+<script setup>
 import Navbar from "./UI/Navbar.vue";
-
-export default {
-  name: "OurStory",
-  components: { Navbar },
-};
 </script>
 <style scoped>
 .page-container {
-  background-image: url("../assets/background-story-1920.png");
+  background-image: url("@/assets/img/backgrounds/background-story-1920.png");
 }
 
 .page-container__content {
@@ -107,7 +102,7 @@ export default {
 
 @media screen and (max-width: 1540px) {
   .page-container {
-    background-image: url("../assets/background-story-1536.png");
+    background-image: url("@/assets/img/backgrounds/background-story-1536.png");
     height: 100%;
   }
 }

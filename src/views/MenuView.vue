@@ -2,10 +2,6 @@
 	<Menu />
 </template>
 
-<script>
+<script setup>
 	import Menu from "@/components/Menu.vue";
-	export default {
-		name: "MenuView",
-		components: { Menu },
-	};
 </script>

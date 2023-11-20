@@ -91,12 +91,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "DeliveryInfo",
-};
-</script>
-
 <style scoped>
 form {
   display: flex;

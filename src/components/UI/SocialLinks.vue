@@ -3,23 +3,17 @@
     <a class="link" href="#"
       ><img
         class="link__image"
-        src="../../assets/instagram.svg"
+        src="@/assets/img/icons/instagram.svg"
         alt="Instagram"
     /></a>
     <a class="link" href="#"
-      ><img class="link__image" src="../../assets/facebook.svg" alt="Facebook"
+      ><img class="link__image" src="@/assets/img/icons/facebook.svg" alt="Facebook"
     /></a>
     <a class="link" href="#"
-      ><img class="link__image" src="../../assets/twitter.svg" alt="Twitter"
+      ><img class="link__image" src="@/assets/img/icons/twitter.svg" alt="Twitter"
     /></a>
   </div>
 </template>
-
-<script>
-export default {
-  name: "FooterSocialLinks",
-};
-</script>
 
 <style scoped>
 .social-links {

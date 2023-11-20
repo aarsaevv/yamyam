@@ -1,31 +1,26 @@
 <template>
   <div class="item__buttons-amount">
     <button @click="decreaseAmountCounter">-</button>
-    {{ this.amountCounter }}
+    {{ amountCounter }}
     <button @click="increaseAmountCounter">+</button>
   </div>
 </template>
 
-<script>
-export default {
-  name: "AmountSelector",
-  data() {
-    return {
-      amountCounter: 1,
-    };
-  },
-  methods: {
-    increaseAmountCounter() {
-      if (this.amountCounter < 8) {
-        this.amountCounter++;
-      }
-    },
-    decreaseAmountCounter() {
-      if (this.amountCounter > 1) {
-        this.amountCounter--;
-      }
-    },
-  },
+<script setup>
+import { ref } from "vue";
+
+const amountCounter = ref(1);
+
+const increaseAmountCounter = () => {
+  if (amountCounter.value < 8) {
+    amountCounter.value += 1;
+  }
+};
+
+const decreaseAmountCounter = () => {
+  if (amountCounter.value > 1) {
+    amountCounter.value -= 1;
+  }
 };
 </script>
 

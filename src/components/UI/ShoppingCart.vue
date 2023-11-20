@@ -4,7 +4,7 @@
 			<h3>Shopping cart</h3>
 			<div class="check__image">
 				<img
-					src="../../assets/mini-line.svg"
+					src="@/assets/img/lines/mini-line.svg"
 					alt="Line" />
 			</div>
 			<div class="check__delivery delivery">
@@ -18,7 +18,7 @@
 			</div>
 			<div class="check__image">
 				<img
-					src="../../assets/mini-line.svg"
+					src="@/assets/img/lines/mini-line.svg"
 					alt="Line" />
 			</div>
 			<div class="check__subtotal subtotal">
@@ -36,7 +36,7 @@
 				</div>
 				<div class="check__image">
 					<img
-						src="../../assets/mini-line.svg"
+						src="@/assets/img/lines/mini-line.svg"
 						alt="Line" />
 				</div>
 				<div class="check__total total">
@@ -63,26 +63,24 @@
 		computed: {
 			subtotal() {
 				let subtotal = 0;
-				for (let meal of this.meals) {
+				for (const meal of this.meals) {
 					subtotal += meal.priceLG;
 				}
 				return subtotal;
 			},
 			tax() {
 				let tax = 0;
-				for (let meal of this.meals) {
+				for (const meal of this.meals) {
 					tax += meal.priceLG;
 				}
 				tax = Math.round((tax *= 0.045));
 				return tax;
 			},
 			delivery() {
-				let delivery = 8;
-				return delivery;
+				return 8;
 			},
 			total() {
-				let total = this.subtotal + this.tax + this.delivery;
-				return total;
+        return this.subtotal + this.tax + this.delivery;
 			},
 		},
 	};

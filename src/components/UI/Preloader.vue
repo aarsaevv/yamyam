@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "TestAnimation",
-};
-</script>
-
 <style scoped>
 .container__loader {
   width: 100%;

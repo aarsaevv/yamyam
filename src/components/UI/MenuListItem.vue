@@ -7,25 +7,25 @@
       <img
         v-if="mealType === 'Ramen'"
         class="card__image"
-        src="../../assets/ramen-menu.svg"
+        src="@/assets/img/icons/ramen-menu.svg"
         alt="Picture"
       />
       <img
         v-if="mealType === 'Soup'"
         class="card__image"
-        src="../../assets/soup-menu.svg"
+        src="@/assets/img/icons/soup-menu.svg"
         alt="Picture"
       />
       <img
         v-if="mealType === 'Salad'"
         class="card__image"
-        src="../../assets/salad-menu.svg"
+        src="@/assets/img/icons/salad-menu.svg"
         alt="Picture"
       />
       <img
         v-if="mealType === 'Rice'"
         class="card__image"
-        src="../../assets/rice-menu.svg"
+        src="@/assets/img/icons/rice-menu.svg"
         alt="Picture"
       />
       <p>
@@ -46,7 +46,7 @@
           <img
             class="remove__button"
             @click="removeMeal"
-            src="../../assets/bin.svg"
+            src="@/assets/img/icons/bin.svg"
           />
         </div>
       </div>
@@ -192,7 +192,7 @@ export default {
 }
 
 .added {
-  background-color: gray;
+  background-color: rgb(128, 128, 128);
 }
 
 @media screen and (max-width: 400px) {

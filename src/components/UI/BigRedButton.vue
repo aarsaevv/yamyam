@@ -1,15 +1,11 @@
 <template>
   <button class="block__button button">
-    <div class="button__text"><slot></slot></div>
-    <div class="button__outline"></div>
+    <span class="button__text">
+      <slot></slot>
+    </span>
+    <span class="button__outline"></span>
   </button>
 </template>
-
-<script>
-export default {
-  name: "BigRedButton",
-};
-</script>
 
 <style>
 button {

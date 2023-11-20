@@ -57,18 +57,13 @@
     </div>
   </div>
 </template>
-<script>
+<script setup>
 import Navbar from "./UI/Navbar.vue";
 import SocialLinks from "./UI/SocialLinks.vue";
-
-export default {
-  name: "Contacts",
-  components: { Navbar, SocialLinks },
-};
 </script>
 <style scoped>
 .page-container {
-  background-image: url("../assets/background-contacts-1920.png");
+  background-image: url("@/assets/img/backgrounds/background-contacts-1920.png");
 }
 
 .contacts h2 {
@@ -143,7 +138,7 @@ export default {
 
 @media screen and (max-width: 1540px) {
   .page-container {
-    background-image: url("../assets/background-contacts-1536.png");
+    background-image: url("@/assets/img/backgrounds/background-contacts-1536.png");
   }
 }
 

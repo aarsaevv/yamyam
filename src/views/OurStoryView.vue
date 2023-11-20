@@ -2,12 +2,6 @@
 	<OurStory />
 </template>
 
-<script>
+<script setup>
 	import OurStory from "@/components/OurStory.vue";
-	export default {
-		name: "OurStoryView",
-		components: {
-			OurStory,
-		},
-	};
 </script>
